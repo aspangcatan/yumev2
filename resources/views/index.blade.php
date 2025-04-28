@@ -34,10 +34,10 @@
 
 <body class="bg-black text-white">
 <!-- Hero Section -->
-<section class="min-h-screen bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
+<section class="h-[83vh] bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
     <!-- Navbar -->
-@include('layouts.header')
-    <div class="flex flex-col justify-center items-center text-center mt-20 px-6">
+    @include('layouts.header')
+    <div class="flex flex-col justify-center items-center text-center mt-20 px-10">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6">DISCOVER & STREAM FRESH NEW MUSIC</h1>
         <p class="text-lg md:text-xl max-w-2xl mb-10">
             YUME connects emerging artists with global listeners. <br> Be the first to discover tomorrow’s stars.
@@ -91,7 +91,6 @@
 
 <!-- Section: Global Music Scene -->
 <section class="relative w-full min-h-[600px] flex items-center justify-center text-white overflow-hidden">
-
     <!-- Background Split (Left image, Right solid color) -->
     <div class="absolute inset-0 flex w-full h-full">
         <!-- Left Background Image -->
@@ -102,24 +101,37 @@
     </div>
 
     <!-- Centered Content Layered on Top -->
-    <div class="relative z-10 max-w-3xl text-center px-6">
-        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-            Your Stage to Shine on the <br>
-            <span class="text-yume-orange">Global Music Scene!</span>
-        </h2>
-        <p class="text-lg mb-6">
-            YUME.global empowers aspiring artists by providing a global platform where their music can be heard, loved,
-            and rewarded. Whether you’re an emerging indie star or an undiscovered voice, YUME.global helps you break
-            into the world stage.
-        </p>
-        <p class="text-yume-orange font-semibold text-sm mb-8">
-            STREAM TO GLOBAL AUDIENCES &nbsp;|&nbsp; PUBLISH YOUR MUSIC FOR FREE <br class="hidden md:block"> HEADLINE
-            INTERNATIONAL EVENTS
-        </p>
-        <a href="#"
-           class="inline-block bg-white text-yume-orange font-bold py-3 px-8 rounded-full transition hover:bg-gray-100">
-            LEARN MORE
-        </a>
+    <div class="relative z-10  w-full text-center px-6">
+        <div class="flex flex-col items-center self-center" style="margin-left: 7rem">
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6"
+                style="font-size: 60px;margin-left: 4rem">
+                Your Stage to Shine on the <br>
+                <span class="text-yume-orange" style="font-size: 68px">Global Music Scene!</span>
+            </h2>
+            <p class="text-lg mb-6 md:w-[60%]" style="font-size: 20px">
+                YUME.global empowers aspiring artists by providing a global platform where their music can be heard,
+                loved,
+                and rewarded. Whether you’re an emerging indie star or an undiscovered voice, YUME.global helps you
+                break
+                into the world stage.
+            </p>
+        </div>
+
+        <!-- Bottom Section Full Width Inside -->
+        <div class="relative w-full" style="margin-top: 50px;">
+            <div class="flex justify-between" style="margin-right: 10%;margin-left: 10%">
+                <div class="text-yume-orange font-semibold text-sm" style="font-size: 23px;text-align: start">
+                    <p style="padding: 3px">
+                        STREAM TO GLOBAL AUDIENCES &nbsp;|&nbsp; PUBLISH YOUR MUSIC FOR FREE
+                    </p>
+                    <p style="padding: 3px">HEADLINE INTERNATIONAL EVENTS</p>
+                </div>
+                <a href="#"
+                   class="inline-block bg-white text-yume-orange font-bold py-3 px-8 rounded-full transition hover:bg-gray-100">
+                    LEARN MORE
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
