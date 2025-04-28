@@ -37,19 +37,3 @@
     <a href="#" class="block text-white">FAQ</a>
     <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full">Sign In</a>
 </div>
-
-<!-- Hero Content -->
-<div class="flex flex-col justify-center items-center text-center mt-20 px-6">
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6">DISCOVER & STREAM FRESH NEW MUSIC</h1>
-    <p class="text-lg md:text-xl max-w-2xl mb-10">
-        YUME connects emerging artists with global listeners. <br> Be the first to discover tomorrow’s stars.
-    </p>
-    <div class="flex flex-col md:flex-row gap-6">
-        <a href="#" class="bg-white text-orange-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition">
-            JOIN AS ARTIST
-        </a>
-        <a href="#" class="bg-black text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-800 transition">
-            JOIN AS LISTENER
-        </a>
-    </div>
-</div>
