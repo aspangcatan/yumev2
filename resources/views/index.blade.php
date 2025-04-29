@@ -14,9 +14,6 @@
                 extend: {
                     colors: {
                         'yume-orange': '#F85E2F',
-                    },
-                    backgroundImage: {
-                        'dots-pattern': "url('dots-pattern.svg')", /* We'll generate this below */
                     }
                 }
             }
@@ -34,9 +31,12 @@
 
 <body class="bg-black text-white">
 <!-- Hero Section -->
-<section class="h-[83vh] bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
-    <!-- Navbar -->
-  
+<section class="relative h-[83vh] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
+    <!-- Decorative Dots Background -->
+    <img src="{{ asset('img/img-bg-dots-1.png') }}"
+         class="absolute top-0 left-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
+         alt="Background Dots">
+
     @include('layouts.header', ['active' => 'home'])
     <div class="flex flex-col justify-center items-center text-center mt-20 px-10">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6">DISCOVER & STREAM FRESH NEW MUSIC</h1>
@@ -136,6 +136,48 @@
     </div>
 </section>
 
+<section class="bg-[#F15A29]">
+    <div class="max-w-7xl mx-auto px-4">
+        <div
+            class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-start bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover py-10">
+
+            <!-- Left Side Images -->
+            <div class="relative h-[400px] flex items-start justify-start gap-6">
+                <img src="{{ asset('img/yume-artist-4.png') }}"
+                     class="w-32 h-[400px] object-cover relative top-[50px]" alt="Artist 1">
+                <img src="{{ asset('img/yume-artist-2.png') }}"
+                     class="w-32 h-[400px] object-cover z-10" alt="Artist 2">
+                <img src="{{ asset('img/yume-artist-3.png') }}"
+                     class="w-32 h-[400px] object-cover relative top-[50px]" alt="Artist 3">
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="text-white text-center md:text-left space-y-6">
+                <img src="{{ asset('img/yume-artist-5.png') }}" class="w-full h-32 object-cover" alt="Top Banner">
+
+                <div>
+                    <h2 class="text-[50px] font-extrabold text-center">YUME Artists</h2>
+                    <p class="text-lg text-center" style="font-size: 22px">
+                        Meet the rising stars shaping the future of music. YUME’s global community is discovering tomorrow’s
+                        chart-toppers today. Join our roster of talented artists and take the first step toward living your
+                        dream.
+                    </p>
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="#"
+                       class="inline-block px-8 py-6 bg-[#121212] text-white text-sm font-semibold rounded-full hover:opacity-90 transition" style="font-size: 24px">
+                        GET PUBLISHED FOR FREE
+                    </a>
+                </div>
+
+                <img src="{{ asset('img/yume-artist-1.png') }}" class="w-full h-32 object-cover" alt="Bottom Banner">
+            </div>
+
+        </div>
+    </div>
+
+</section>
 <section class="bg-gradient-to-b from-[#F15A29] to-white py-12">
     <div class="flex items-center justify-center space-y-8">
         <div class="text-4xl md:text-6xl font-extrabold text-[#1E2731] text-center" style="font-size: 64px">
@@ -154,16 +196,19 @@
     </div>
 </section>
 
-<section class="relative bg-center bg-no-repeat bg-cover text-white py-20 px-6" style="background-image: url('{{ asset('img/img-home-4.png') }}');">
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-10">
+<section class="relative bg-center bg-no-repeat bg-cover text-white py-20 px-6"
+         style="background-image: url('{{ asset('img/img-home-4.png') }}');">
+    <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-10">
 
         <!-- Left Text Section -->
         <div class="text-left max-w-xl space-y-6">
             <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
-                Finally, <span class="text-white/80">your passion for<br /> music pays.</span>
+                Finally, <span class="text-white/80">your passion for<br/> music pays.</span>
             </h2>
             <p class="text-lg sm:text-xl">
-                YUME makes a true music listener's dream come true: to be able to discover and support artists; and be rewarded for doing so.
+                YUME makes a true music listener's dream come true: to be able to discover and support artists; and be
+                rewarded for doing so.
             </p>
         </div>
 
@@ -173,7 +218,8 @@
             <div class="space-y-2">
                 <div class="text-2xl font-bold text-[#F15A29]">🎧 Freemium Account</div>
                 <p class="text-lg">
-                    With a FREE account, get a chance to receive exclusive access to concerts, limited edition merchandise, or VIP experiences.
+                    With a FREE account, get a chance to receive exclusive access to concerts, limited edition
+                    merchandise, or VIP experiences.
                 </p>
             </div>
 
