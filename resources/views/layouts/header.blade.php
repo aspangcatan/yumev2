@@ -1,9 +1,9 @@
 <header class="flex justify-between items-center p-6 max-w-7xl mx-auto relative">
     <!-- Left Menu -->
     <nav class="hidden md:flex items-center space-x-8 absolute left-6">
-        <a href="#" class="text-white hover:text-orange-400 font-medium">Home</a>
-        <a href="#" class="text-white hover:text-orange-400 font-medium">Artists</a>
-        <a href="#" class="text-white hover:text-orange-400 font-medium">Listeners</a>
+        <a href="{{ route('index') }}" class="{{ ($active ?? '') === 'home' ? 'text-orange-500' : '' }}">Home</a>
+        <a href="{{ route('artist') }}" class="{{ ($active ?? '') === 'artist' ? 'text-orange-500' : '' }}">Artists</a>
+        <a href="#" class="{{ ($active ?? '') === 'listener' ? 'text-orange-500' : '' }}">Listeners</a>
     </nav>
 
     <!-- Center Logo -->
@@ -13,8 +13,8 @@
 
     <!-- Right Menu -->
     <nav class="hidden md:flex items-center space-x-8 absolute right-6">
-        <a href="#" class="text-white hover:text-orange-400 font-medium">Rewards</a>
-        <a href="#" class="text-white hover:text-orange-400 font-medium">FAQ</a>
+        <a href="#" class="{{ ($active ?? '') === 'rewards' ? 'text-orange-500' : '' }}">Rewards</a>
+        <a href="#" class="{{ ($active ?? '') === 'faq' ? 'text-orange-500' : '' }}">FAQ</a>
         <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full transition">Sign In</a>
     </nav>
 
@@ -30,8 +30,8 @@
 
 <!-- Mobile Menu (hidden by default) -->
 <div id="mobile-menu" class="hidden md:hidden px-6 space-y-4 text-center mt-4">
-    <a href="#" class="block text-white">Home</a>
-    <a href="#" class="block text-white">Artists</a>
+    <a href="{{ route('index') }}" class="block text-white">Home</a>
+    <a href="{{ route('artist') }}" class="block text-white">Artists</a>
     <a href="#" class="block text-white">Listeners</a>
     <a href="#" class="block text-white">Rewards</a>
     <a href="#" class="block text-white">FAQ</a>
