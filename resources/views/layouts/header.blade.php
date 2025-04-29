@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center p-6 max-w-7xl mx-auto relative">
+<header class="flex justify-between items-center p-10 max-w-7xl mx-auto relative font-bold" style="font-size: 20px">
     <!-- Left Menu -->
     <nav class="hidden md:flex items-center space-x-8 absolute left-6">
         <a href="{{ route('index') }}" class="{{ ($active ?? '') === 'home' ? 'text-orange-500' : '' }}">Home</a>

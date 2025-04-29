@@ -43,7 +43,7 @@
             Find answers to the most common questions below.
         </p>
 
-        <div class="mt-8">
+        <div class="mt-8" style="display: none">
             <a href="#"
                class="inline-block bg-white text-yume-orange font-bold py-3 px-8 rounded-full transition hover:bg-gray-100">
                 CONTACT US
