@@ -325,10 +325,11 @@
         <!-- CTA Button -->
         <div>
             <a href="{{ route('listener') }}"
-               class="bg-[#f15a29] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#d84e23] transition">
+               class="bg-[#f15a29] text-white font-bold text-lg sm:text-base md:text-lg px-8 sm:px-6 py-4 rounded-full hover:bg-[#d84e23] transition whitespace-nowrap">
                 CREATE AN ACCOUNT
             </a>
         </div>
+
 
     </div>
 </section>
