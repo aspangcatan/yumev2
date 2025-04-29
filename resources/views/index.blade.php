@@ -36,8 +36,8 @@
 <!-- Hero Section -->
 <section class="h-[83vh] bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
     <!-- Navbar -->
-  
     @include('layouts.header', ['active' => 'home'])
+
     <div class="flex flex-col justify-center items-center text-center mt-20 px-10">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6">DISCOVER & STREAM FRESH NEW MUSIC</h1>
         <p class="text-lg md:text-xl max-w-2xl mb-10">
@@ -56,12 +56,8 @@
     </div>
 </section>
 
-<!-- Existing Hero Section here -->
-
-<!-- New Section: Love Music -->
 <section class="bg-white text-black py-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
-
         <!-- Text Content -->
         <div class="flex-1">
             <h2 class="text-4xl font-extrabold mb-6">
@@ -136,7 +132,14 @@
     </div>
 </section>
 
-<section class="bg-gradient-to-b from-[#F15A29] to-white py-12">
+<section id="listen" class="bg-gradient-to-b from-[#F15A29] to-white py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-start items-center gap-6">
+        <img src="{{ asset('img/img1.png') }}" alt="Image 1" class="w-32 h-32 h-auto rounded shadow-md">
+        <img src="{{ asset('img/img2.png') }}" alt="Image 2" class="w-32 h-auto rounded shadow-md">
+        <img src="{{ asset('img/img3.png') }}" alt="Image 3" class="w-32 h-auto rounded shadow-md">
+    </div>
+
+
     <div class="flex items-center justify-center space-y-8">
         <div class="text-4xl md:text-6xl font-extrabold text-[#1E2731] text-center" style="font-size: 64px">
             Listen to YUME
@@ -251,38 +254,52 @@
     <div class="max-w-7xl mx-auto space-y-20">
 
         <!-- Testimonials -->
-        <div class="text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-yume-orange mb-12">What YUME Listeners Say</h2>
+        <div class="text-center relative">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-yume-orange mb-12">
+                What YUME Listeners Say
+            </h2>
 
             <!-- Carousel Container -->
-            <div class="overflow-hidden">
-                <div class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory justify-center px-4">
+            <div class="relative overflow-hidden">
+                <!-- Left Arrow -->
+                <button id="leftArrow" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-20">
+                    <svg class="w-6 h-6 text-yume-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <!-- Right Arrow -->
+                <button id="rightArrow" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-20">
+                    <svg class="w-6 h-6 text-yume-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <div id="carousel" class="flex space-x-6 overflow-y-hidden overflow-x-auto scrollbar-hide snap-x snap-mandatory justify-center px-10">
                     <!-- Review 1 - Dimmed -->
                     <div class="min-w-[300px] snap-start opacity-50 scale-95 transition-all duration-300">
                         <div class="rounded-xl bg-white p-2">
-                            <img src="{{ asset('img/yume-listener-1.png') }}"
-                                 alt="YUME Review 1" class="w-full rounded-md">
+                            <img src="{{ asset('img/yume-listener-1.png') }}" alt="YUME Review 1" class="w-full rounded-md">
                         </div>
                     </div>
 
                     <!-- Review 2 - Center Highlight -->
                     <div class="min-w-[300px] snap-start opacity-100 scale-105 transition-all duration-300 z-10">
                         <div class="rounded-xl bg-white p-2">
-                            <img src="{{ asset('img/yume-listener-2.png') }}"
-                                 alt="YUME Review 2" class="w-full rounded-md">
+                            <img src="{{ asset('img/yume-listener-2.png') }}" alt="YUME Review 2" class="w-full rounded-md">
                         </div>
                     </div>
 
                     <!-- Review 3 - Dimmed -->
                     <div class="min-w-[300px] snap-start opacity-50 scale-95 transition-all duration-300">
                         <div class="rounded-xl bg-white p-2">
-                            <img src="{{ asset('img/yume-listener-3.png') }}"
-                                 alt="YUME Review 3" class="w-full rounded-md">
+                            <img src="{{ asset('img/yume-listener-3.png') }}" alt="YUME Review 3" class="w-full rounded-md">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- News Section -->
         <div class="container mx-auto px-6 md:px-12 lg:px-20">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between">
@@ -397,6 +414,18 @@
 <script>
     const toggleBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const carousel = document.getElementById('carousel');
+    const leftArrow = document.getElementById('leftArrow');
+    const rightArrow = document.getElementById('rightArrow');
+
+    leftArrow.addEventListener('click', () => {
+        alert("Sasdas");
+        carousel.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        carousel.scrollBy({ left: 320, behavior: 'smooth' });
+    });
 
     toggleBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
