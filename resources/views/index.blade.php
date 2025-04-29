@@ -36,7 +36,8 @@
 <!-- Hero Section -->
 <section class="h-[83vh] bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
     <!-- Navbar -->
-    @include('layouts.header')
+  
+    @include('layouts.header', ['active' => 'home'])
     <div class="flex flex-col justify-center items-center text-center mt-20 px-10">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6">DISCOVER & STREAM FRESH NEW MUSIC</h1>
         <p class="text-lg md:text-xl max-w-2xl mb-10">
