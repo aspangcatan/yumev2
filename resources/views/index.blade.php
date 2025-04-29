@@ -55,11 +55,11 @@
             <br class="hidden sm:block"> Be the first to discover tomorrow’s stars.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
-            <a href="#"
+            <a href="{{ route('artist') }}"
                class="bg-white text-orange-600 font-semibold py-3 px-6 sm:px-8 rounded-full shadow-lg text-center hover:bg-gray-100 transition w-full sm:w-auto">
                 JOIN AS ARTIST
             </a>
-            <a href="#"
+            <a href="{{ route('listener') }}"
                class="bg-black text-white font-semibold py-3 px-6 sm:px-8 rounded-full shadow-lg text-center hover:bg-gray-800 transition w-full sm:w-auto">
                 JOIN AS LISTENER
             </a>
@@ -147,16 +147,18 @@
         <div
             class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-start bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover py-10">
 
-            <!-- Left Side Images -->
-            <div
-                class="relative flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 h-auto md:h-[400px]">
+            <div class="relative flex flex-row sm:flex-row items-center gap-4 md:gap-6 h-auto md:h-[400px]">
                 <img src="{{ asset('img/yume-artist-4.png') }}"
-                     class="w-28 sm:w-32 h-64 sm:h-[400px] object-cover sm:relative sm:top-[50px]" alt="Artist 1">
+                     class="w-full max-w-[100px] sm:w-32 h-auto sm:h-[400px] object-contain sm:object-cover sm:relative sm:top-[50px]"
+                     alt="Artist 1">
                 <img src="{{ asset('img/yume-artist-2.png') }}"
-                     class="w-28 sm:w-32 h-64 sm:h-[400px] object-cover z-10" alt="Artist 2">
+                     class="w-full max-w-[100px] sm:w-32 h-auto sm:h-[400px] object-contain sm:object-cover z-10"
+                     alt="Artist 2">
                 <img src="{{ asset('img/yume-artist-3.png') }}"
-                     class="w-28 sm:w-32 h-64 sm:h-[400px] object-cover sm:relative sm:top-[50px]" alt="Artist 3">
+                     class="w-full max-w-[100px] sm:w-32 h-auto sm:h-[400px] object-contain sm:object-cover sm:relative sm:top-[50px]"
+                     alt="Artist 3">
             </div>
+
 
             <!-- Right Side Content -->
             <div class="text-white text-center md:text-left space-y-6">
@@ -166,8 +168,8 @@
 
                 <!-- Text Content -->
                 <div>
-                    <h2 class="text-3xl sm:text-[50px] font-extrabold">YUME Artists</h2>
-                    <p class="text-base sm:text-lg md:text-xl mt-4">
+                    <h2 class="text-3xl sm:text-[50px] font-extrabold text-center">YUME Artists</h2>
+                    <p class="text-base sm:text-lg md:text-xl mt-4 text-center">
                         Meet the rising stars shaping the future of music. YUME’s global community is discovering
                         tomorrow’s
                         chart-toppers today. Join our roster of talented artists and take the first step toward living
@@ -176,8 +178,8 @@
                 </div>
 
                 <!-- CTA Button -->
-                <div class="flex justify-center md:justify-start">
-                    <a href="#"
+                <div class="flex justify-center">
+                    <a href="{{ route('artist') }}"
                        class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition">
                         GET PUBLISHED FOR FREE
                     </a>
@@ -322,7 +324,7 @@
 
         <!-- CTA Button -->
         <div>
-            <a href="#"
+            <a href="{{ route('listener') }}"
                class="bg-[#f15a29] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#d84e23] transition">
                 CREATE AN ACCOUNT
             </a>
@@ -333,7 +335,6 @@
 
 <section class="relative bg-white text-black py-20 px-6">
     <div class="max-w-7xl mx-auto space-y-20">
-
         <!-- Testimonials -->
         <div class="text-center relative">
             <h2 class="text-4xl md:text-5xl font-extrabold text-yume-orange mb-12">
@@ -346,8 +347,7 @@
                 <button id="leftArrow"
                         class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-20">
                     <svg class="w-6 h-6 text-yume-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M15 19l-7-7 7-7"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                     </svg>
                 </button>
 
@@ -360,31 +360,24 @@
                 </button>
 
                 <div id="carousel"
-                     class="flex space-x-6 overflow-y-hidden overflow-x-auto scrollbar-hide snap-x snap-mandatory justify-center px-10">
-                    <!-- Review 1 - Dimmed -->
-                    <div class="carousel-item min-w-[300px] snap-start opacity-50 scale-95 transition-all duration-300">
-                        <div class="rounded-xl bg-white p-2">
-                            <img src="{{ asset('img/yume-listener-1.png') }}" alt="YUME Review 1"
-                                 class="w-full rounded-md">
-                        </div>
-                    </div>
+                     class="flex space-x-6 overflow-hidden snap-x snap-mandatory justify-center px-10">
+                    @php
+                        $listeners = [
+                            'yume-listener-1.png',
+                            'yume-listener-2.png',
+                            'yume-listener-3.png',
+                        ];
+                    @endphp
 
-                    <!-- Review 2 - Center Highlight -->
-                    <div
-                        class="carousel-item min-w-[300px] snap-start opacity-100 scale-105 transition-all duration-300 z-10">
-                        <div class="rounded-xl bg-white p-2">
-                            <img src="{{ asset('img/yume-listener-2.png') }}" alt="YUME Review 2"
-                                 class="w-full rounded-md">
+                    @foreach ($listeners as $index => $listener)
+                        <div class="carousel-item min-w-[300px] snap-start transition-all duration-300"
+                             data-index="{{ $index }}">
+                            <div class="rounded-xl bg-white p-2">
+                                <img src="{{ asset('img/' . $listener) }}" alt="YUME Review {{ $index + 1 }}"
+                                     class="w-full rounded-md">
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Review 3 - Dimmed -->
-                    <div class="carousel-item min-w-[300px] snap-start opacity-50 scale-95 transition-all duration-300">
-                        <div class="rounded-xl bg-white p-2">
-                            <img src="{{ asset('img/yume-listener-3.png') }}" alt="YUME Review 3"
-                                 class="w-full rounded-md">
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -516,54 +509,56 @@
         });
     }
 
-    // Carousel functionality with center highlighting
-    function updateCarouselHighlight() {
-        const items = carousel.querySelectorAll('.carousel-item');
+    function updateVisuals() {
+        const items = Array.from(carousel.querySelectorAll('.carousel-item'));
+
+        // Remove all effects first
+        items.forEach(item => {
+            item.classList.remove('opacity-50', 'scale-95', 'opacity-100', 'scale-105', 'z-10');
+            item.classList.add('opacity-50', 'scale-95');
+        });
+
+        // Get carousel's horizontal center
         const carouselRect = carousel.getBoundingClientRect();
         const carouselCenter = carouselRect.left + carouselRect.width / 2;
 
-        items.forEach(item => {
-            const itemRect = item.getBoundingClientRect();
-            const itemCenter = itemRect.left + itemRect.width / 2;
-            const distance = Math.abs(carouselCenter - itemCenter);
+        let closestItem = null;
+        let closestDistance = Infinity;
 
-            if (distance < itemRect.width / 2) {
-                item.classList.add('opacity-100', 'scale-105', 'z-10');
-                item.classList.remove('opacity-50', 'scale-95');
-            } else {
-                item.classList.add('opacity-50', 'scale-95');
-                item.classList.remove('opacity-100', 'scale-105', 'z-10');
+        items.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            const itemCenter = rect.left + rect.width / 2;
+            const distance = Math.abs(carouselCenter - itemCenter);
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestItem = item;
             }
         });
+
+        if (closestItem) {
+            closestItem.classList.remove('opacity-50', 'scale-95');
+            closestItem.classList.add('opacity-100', 'scale-105', 'z-10');
+        }
     }
 
-    function centerCarouselOn(index) {
-        const items = carousel.querySelectorAll('.carousel-item');
-        const item = items[index];
-        const carouselWidth = carousel.offsetWidth;
-        const scrollLeft = item.offsetLeft - (carouselWidth / 2) + (item.offsetWidth / 2);
-        carousel.scrollTo({left: scrollLeft, behavior: 'instant'});
-        updateCarouselHighlight();
+    function moveLeft() {
+        const last = carousel.lastElementChild;
+        carousel.insertBefore(last, carousel.firstElementChild);
+        requestAnimationFrame(updateVisuals);
     }
 
-    if (carousel && leftArrow && rightArrow) {
-        leftArrow.addEventListener('click', () => {
-            carousel.scrollBy({left: -320, behavior: 'smooth'});
-        });
-
-        rightArrow.addEventListener('click', () => {
-            carousel.scrollBy({left: 320, behavior: 'smooth'});
-        });
-
-        carousel.addEventListener('scroll', () => {
-            setTimeout(updateCarouselHighlight, 200);
-        });
-
-        window.addEventListener('resize', updateCarouselHighlight);
-
-        // Initial center on the third item (index 2)
-        centerCarouselOn(2);
+    function moveRight() {
+        const first = carousel.firstElementChild;
+        carousel.appendChild(first);
+        requestAnimationFrame(updateVisuals);
     }
+
+    leftArrow.addEventListener('click', moveLeft);
+    rightArrow.addEventListener('click', moveRight);
+
+    window.addEventListener('resize', updateVisuals); // Recalculate on resize
+    updateVisuals();
+
 </script>
 </body>
 </html>
