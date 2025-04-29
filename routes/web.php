@@ -24,3 +24,16 @@ Route::get('/faq', function () {
 Route::get('/artist', function () {
     return view('artist');
 })->name('artist');
+
+Route::get('/listener', function () {
+    return view('listener');
+})->name('listener');
+
+Route::get('/reward', function () {
+    return view('reward');
+})->name('reward');
+
+Route::get('/signin', function () {
+    return view('signin');
+})->name('signin');
+

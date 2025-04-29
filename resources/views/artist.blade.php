@@ -224,24 +224,27 @@
       </p>
     
       <form class="space-y-3">
-        <input type="text" placeholder="Name*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-xs" required>
+        <input type="text" placeholder="Name*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
     
-        <input type="email" placeholder="Email Address*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-xs" required>
+        <input type="email" placeholder="Email Address*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
     
         <div class="flex gap-2">
-          <select class="w-1/3 px-2 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-xs">
+          <select class="w-1/3 px-2 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs">
             <option>us +1</option>
             <option>uk +44</option>
             <option>ind +91</option>
           </select>
-          <input type="text" placeholder="Phone*" class="w-2/3 px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-xs" required>
+          <input type="text" placeholder="Phone*" class="w-2/3 px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
         </div>
     
-        <select class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-xs" required>
+        <select class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
           <option>Please select country*</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>India</option>
         </select>
     
-        <textarea placeholder="Message*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-xs" rows="2" required></textarea>
+        <textarea placeholder="Message*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" rows="2" required></textarea>
     
         <button type="submit" class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-900 transition text-xs">Submit</button>
       </form>
