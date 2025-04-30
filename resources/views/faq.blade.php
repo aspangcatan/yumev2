@@ -35,7 +35,9 @@
 <body class="bg-black text-white">
 <!-- Hero Section -->
 <section class="h-[70vh] bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
-    <!-- Navbar -->
+    <img src="{{ asset('img/img-bg-dots-1.png') }}"
+         class="absolute top-0 left-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
+         alt="Background Dots">
     @include('layouts.header', ['active' => 'faq'])
     <div class="flex flex-col justify-center items-center text-center mt-20 px-10">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6">FEQUENTLY ASKED QUESTIONS</h1>

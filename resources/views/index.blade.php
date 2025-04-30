@@ -37,7 +37,7 @@
 </head>
 <body class="bg-black text-white">
 <section
-    class="relative md:h-[60vh] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
+    class="relative min-h-screen md:min-h-[60vh] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
 
     <!-- Decorative Dots Background -->
     <img src="{{ asset('img/img-bg-dots-1.png') }}"
@@ -46,7 +46,7 @@
 
     @include('layouts.header', ['active' => 'home'])
 
-    <div class="flex flex-col justify-center items-center text-center mt-28 px-6 sm:px-10 relative z-10">
+    <div class="flex flex-col justify-center items-center text-center min-h-[calc(100vh-100px)] px-6 sm:px-10 relative z-10">
         <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
             DISCOVER & STREAM <br class="hidden sm:block"> FRESH NEW MUSIC
         </h1>
@@ -66,6 +66,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="relative bg-white text-black py-16 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
@@ -225,7 +226,7 @@
     </div>
 </section>
 
-<section class="relative text-white py-16 px-4 sm:px-8 overflow-hidden">
+<section class="relative pt-8 text-white px-4 sm:px-8 overflow-hidden">
     <!-- Blurred Sunset Background Image (absolute with lower z-index) -->
     <img src="{{ asset('img/backdrop-sunset-bg.png') }}"
          alt="Clean Sunset Background"
@@ -234,13 +235,11 @@
     <!-- Centered Foreground Image (absolute with higher z-index) -->
     <img src="{{ asset('img/img-home-4.png') }}"
          alt="YUME Background"
-         class="hidden sm:block absolute bottom-0 left-1/3 transform -translate-x-[25%] z-10 w-[46vw] max-w-none object-contain pointer-events-none">
-
+         class="hidden sm:block absolute inset-x-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[70vw] md:w-[55vw] lg:w-[40vw] xl:w-[35vw] max-w-none object-contain pointer-events-none"/>
 
     <!-- Content Container -->
-    <div class="relative z-10 max-w-7xl mx-auto z-20">
+    <div class="relative z-10 max-w-7xl mx-auto z-20 pt-10 pb-10">
         <div class="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-10">
-
             <!-- Left Text Section -->
             <div class="text-left max-w-xl px-4 sm:px-6 space-y-6 text-center lg:text-left">
                 <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
@@ -255,7 +254,7 @@
             </div>
 
             <!-- Right Feature Cards -->
-            <div class="space-y-10 max-w-xl text-center px-4 sm:px-6">
+            <div class="flex flex-col items-center space-y-10 text-center px-4 sm:px-6">
                 <!-- Freemium -->
                 <div class="space-y-3 flex flex-col items-center">
                     <img src="{{ asset('img/ic-headphone-1.png') }}" alt="Headphone Icon"
@@ -279,9 +278,11 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
+
 
 <section class="bg-[#131c26] text-white py-20 px-4">
     <div class="max-w-7xl mx-auto border-2 border-[#f15a29] rounded-3xl p-10 text-center space-y-10">
