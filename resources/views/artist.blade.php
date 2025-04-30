@@ -76,10 +76,9 @@
         It extends beyond printing sheet music to include licensing, royalty collection, and intellectual property protection.
     </p>
 
-    <a href="#learn-more" class="inline-block bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-full transition">
+    <a href="#learn-more" class="inline-block bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-full transition" style="margin-bottom:5px;">
         LEARN MORE
     </a>
-
 </section>
 
 
@@ -203,57 +202,62 @@
     </div>
 </section>
 
-<section class="w-full flex items-center justify-center bg-[#ffc266] px-4 py-8 relative overflow-hidden">
-  <!-- Background Image on the right -->
-  <div class="absolute right-0 top-0 bottom-0 w-1/2 bg-no-repeat bg-contain bg-center" style="background-image: url('{{ asset('img/front-view-happy-woman-with-headphones.jpg') }}');"></div>
+<section class="relative bg-cover bg-center bg-no-repeat min-h-[70vh] flex items-center justify-center text-center" style="background-image: url('{{ asset('img/backgroundchange.png') }}');">
+      <!-- Wrapper: put form + image side by side and centered -->
+<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 px-4">
+  
+  <!-- form on left -->
+  <div class="max-w-md p-4 bg-white shadow-lg rounded-xl border border-orange-300">
+    <h2 class="text-xl md:text-2xl font-extrabold text-orange-500 text-center">ARTIST SUBMISSION FORM</h2>
+    <p class="text-center text-gray-700 font-semibold mt-1 mb-4 text-sm">EMBARK ON A MUSICAL ODYSSEY!</p>
 
-  <!-- Content/Form -->
-  <div class="relative z-10 max-w-7xl w-full flex justify-start pl-16">
-    
-  <div class="bg-white border border-orange-400 rounded-3xl p-6 shadow-lg max-w-md w-full">
-      
-      <h2 class="text-xl font-extrabold text-orange-600 text-center">ARTIST SUBMISSION FORM</h2>
-      <h3 class="text-sm font-semibold text-center mb-2">EMBARK ON A MUSICAL ODYSSEY!</h3>
-    
-      <p class="text-center text-xs text-gray-600 mb-2 leading-snug">
-        Ready to take your musical journey to new heights? Yume invites you to express your interest in joining our dynamic community.
-      </p>
-    
-      <p class="text-center text-xs text-gray-600 mb-4 leading-snug">
-        Whether you're an artist, songwriter, or music enthusiast, Yume celebrates your passion.
-      </p>
-    
-      <form class="space-y-3">
-        <input type="text" placeholder="Name*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-    
-        <input type="email" placeholder="Email Address*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-    
-        <div class="flex gap-2">
-          <select class="w-1/3 px-2 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs">
-            <option>us +1</option>
-            <option>uk +44</option>
-            <option>ind +91</option>
-          </select>
-          <input type="text" placeholder="Phone*" class="w-2/3 px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-        </div>
-    
-        <select class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-          <option>Please select country*</option>
-          <option>United States</option>
-          <option>United Kingdom</option>
-          <option>India</option>
+    <p class="text-center text-gray-700 mb-2 leading-snug text-[11px]">
+      Ready to take your musical journey to unprecedented heights? Yume eagerly extends an invitation for you to express your interest in becoming part of our dynamic community, entrusting us with the meticulous management of your music.
+    </p>
+
+    <p class="text-center text-gray-700 mb-2 leading-snug text-[11px]">
+      Whether you’re a visionary artist, a skilled songwriter, or an impassioned music enthusiast, Yume opens its doors to a world where your passion isn’t just acknowledged; it’s celebrated.
+    </p>
+
+    <p class="text-center text-gray-700 mb-4 leading-snug text-[11px]">
+      Take the leap and join Yume, where every note, every melody, and every beat contributes to something extraordinary!
+    </p>
+
+    <form class="space-y-3">
+      <input type="text" placeholder="Name*" class="w-full px-3 py-1.5 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm text-gray-700" />
+      <input type="email" placeholder="Email Address*" class="w-full px-3 py-1.5 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm text-gray-700" />
+
+      <div class="flex">
+        <select class="border rounded-l-md px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm text-gray-700">
+          <option value="us">us +1</option>
+          <option value="uk">uk +44</option>
+          <option value="ph">ph +63</option>
         </select>
-    
-        <textarea placeholder="Message*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" rows="2" required></textarea>
-    
-        <button type="submit" class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-900 transition text-xs">Submit</button>
-      </form>
-    
-    </div>
-    
+        <input type="tel" placeholder="Phone*" class="w-full px-3 py-1.5 border-t border-b border-r rounded-r-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm text-gray-700" />
+      </div>
 
+      <select class="w-full px-3 py-1.5 border rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm text-gray-700">
+        <option disabled selected>Please select country*</option>
+        <option>United States</option>
+        <option>Philippines</option>
+        <option>United Kingdom</option>
+      </select>
+
+      <textarea placeholder="Message*" rows="3" class="w-full px-3 py-1.5 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm text-gray-700"></textarea>
+
+      <button type="submit" class="w-full bg-black text-white py-1.5 rounded-md hover:bg-gray-800 transition text-sm">Submit</button>
+    </form>
   </div>
 
+  <!-- image on the right -->
+  <div class="flex justify-center items-center h-[300px] md:h-[800px]">
+    <img 
+      src="{{ asset('img/front-view-happy-woman-with-headphones-removebg-preview.png') }}" 
+      alt="Artist Girl" 
+      class="h-full object-contain"
+    >
+  </div>
+</div>
 </section>
 
 
