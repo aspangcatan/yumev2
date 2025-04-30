@@ -206,26 +206,33 @@
 </section>
 
 <section class="bg-gradient-to-b from-[#F15A29] to-white py-12">
-    <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0 px-4">
-        <!-- Heading -->
-        <div
-            class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-[#1E2731] text-center md:text-left leading-tight">
-            Listen to YUME
-        </div>
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0">
 
-        <!-- YouTube Playlist -->
-        <div class="w-full max-w-xl">
-            <iframe
-                src="https://www.youtube.com/embed/videoseries?si=AUMCF01JQKqOoHSv&amp;list=PLjLOGm1HDJ7gT61c9qGutu-hw5Fye3iLq&amp;rel=0&amp;autoplay=0"
-                title="YUME Artists Playlist"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                class="w-full h-[200px] sm:h-[250px] md:h-[300px] rounded-lg shadow-lg">
-            </iframe>
+            <!-- Heading centered -->
+            <div class="w-full md:w-1/2 text-3xl sm:text-4xl md:text-6xl font-extrabold text-[#1E2731] text-center leading-tight">
+                Listen to YUME
+            </div>
+
+            <!-- YouTube Playlist on the right -->
+            <div class="w-full md:w-1/2">
+                <div class="pl-0 md:pl-5">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=AUMCF01JQKqOoHSv&amp;list=PLjLOGm1HDJ7gT61c9qGutu-hw5Fye3iLq&amp;rel=0&amp;autoplay=0"
+                        title="YUME Artists Playlist"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        class="w-full h-[200px] sm:h-[250px] md:h-[300px] rounded-lg shadow-lg">
+                    </iframe>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
+
 
 <section class="relative pt-8 text-white px-4 sm:px-8 overflow-hidden">
     <!-- Blurred Sunset Background Image (absolute with lower z-index) -->
