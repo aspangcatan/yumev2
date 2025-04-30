@@ -202,7 +202,7 @@
     </div>
 </section>
 
-<section class="relative bg-cover bg-center bg-no-repeat min-h-[70vh] flex items-center justify-center text-center" style="background-image: url('{{ asset('img/backgroundchange.png') }}');">
+<section class="relative bg-white bg-cover bg-center bg-no-repeat min-h-[70vh] flex items-center justify-center text-center" style="background-image: url('{{ asset('img/backgroundchange.png') }}');">
       <!-- Wrapper: put form + image side by side and centered -->
 <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 px-4">
   
@@ -259,12 +259,6 @@
   </div>
 </div>
 </section>
-
-
-
-
-
-
 
 <!-- Small Script for Mobile Menu -->
 <script>
