@@ -60,20 +60,29 @@
 </section>
 
 
-<section class="bg-[#fdf9fb] py-16 px-6 md:px-20">
+<section class="bg-white py-16 px-6 md:px-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12"> 
-        <!-- Image (Placeholder) -->
-        <div class="w-full md:w-1/2 flex justify-center">
+       
+        <!-- Image + Button Container -->
+        <div class="w-full md:w-1/2 flex flex-col items-center">
+            <!-- Image -->
             <img 
-                src="{{ asset('img/editedmanwithguitar.jpg') }}" 
+                src="{{ asset('img/orignalphoto-removebg-preview.png') }}" 
                 alt="Person with guitar" 
-                class="rounded-full shadow-lg w-[300px] h-[300px] object-cover"
-                style="clip-path: ellipse(70% 50% at 50% 50%);"
+                class="object-contain"
             />
+
+            <!-- Button -->
+            <a 
+                href="#" 
+                class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition"
+            >
+                LEARN MORE
+            </a>
         </div>
 
         <!-- Content -->
-        <div class="w-full md:w-1/2 text-center md:text-left">
+        <div class="w-full md:w-1/2 text-center md:text-center">
             <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500 leading-snug">
                 Download The App <br>
                 Subscribe & Earn.
@@ -99,13 +108,6 @@
                     </ul>
                 </div>
             </div>
-
-            <a 
-                href="#" 
-                class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition"
-            >
-                LEARN MORE
-            </a>
         </div>
     </div>
 </section>
@@ -127,6 +129,7 @@
                 src="{{ asset('img/portrait-teenage-girl-listening-music-smiling-removebg-preview.png') }}" 
                 alt="Girl with headphones" 
                 class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain scale-90"
+                style="margin-bottom:-50px;"
             />
         </div>
 
@@ -154,7 +157,7 @@
         <img 
                 src="{{ asset('img/pexels-sound-on-3394667-removebg-preview.png') }}" 
                 alt="Boy with headphones" 
-                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain mb-10"
+                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain"
             />
         </div>
 </section>
@@ -315,7 +318,7 @@
           <li>Stream music and accumulate points</li>
         </ul>
       </div>
-      <div>
+      <div class="mb-10">
         <h3 class="text-lg md:text-xl font-bold mb-2">Limitless Earnings</h3>
         <ul class="list-disc list-inside space-y-1 text-white/90">
           <li>Upgrade to a paid account</li>
