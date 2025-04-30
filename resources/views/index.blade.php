@@ -94,14 +94,19 @@
 
         <!-- Image with Glow Backdrop -->
         <div class="absolute left-1/2 bottom-0 transform -translate-x-[10%] hidden md:block
-            w-[900px] h-[550px] bg-[url('/img/img-home-1-backdrop.png')] bg-no-repeat bg-[length:1300px_700px] bg-center"
-             style="image-rendering: pixelated;">
+            w-[900px] h-[550px]">
 
+            <!-- Backdrop image placed absolutely -->
+            <img src="{{ asset('img/img-home-1-backdrop.png') }}"
+                 alt="Backdrop"
+                 class="absolute inset-0 w-full h-full object-contain z-0"
+                 style="image-rendering: pixelated;">
+
+            <!-- Foreground image (Listener Girl) -->
             <img src="{{ asset('img/img-home-1.png') }}"
                  alt="Listener Girl"
                  class="relative z-10 w-full h-full object-contain">
         </div>
-
 
     </div>
 </section>
