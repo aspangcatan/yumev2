@@ -46,7 +46,8 @@
 
     @include('layouts.header', ['active' => 'home'])
 
-    <div class="flex flex-col justify-center items-center text-center min-h-[calc(100vh-100px)] px-6 sm:px-10 relative z-10">
+    <div
+        class="flex flex-col justify-center items-center text-center min-h-[calc(100vh-100px)] px-6 sm:px-10 relative z-10">
         <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
             DISCOVER & STREAM <br class="hidden sm:block"> FRESH NEW MUSIC
         </h1>
@@ -235,7 +236,7 @@
     <!-- Centered Foreground Image (absolute with higher z-index) -->
     <img src="{{ asset('img/img-home-4.png') }}"
          alt="YUME Background"
-         class="hidden sm:block absolute inset-x-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[70vw] md:w-[55vw] lg:w-[40vw] xl:w-[35vw] max-w-none object-contain pointer-events-none"/>
+         class="hidden sm:block absolute inset-x-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[70vw] md:w-[55vw] lg:w-[40vw] xl:w-[32vw] 2xl:w-[27vw] max-w-none object-contain pointer-events-none"/>
 
     <!-- Content Container -->
     <div class="relative z-10 max-w-7xl mx-auto z-20 pt-10 pb-10">
