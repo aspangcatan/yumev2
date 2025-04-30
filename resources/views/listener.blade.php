@@ -128,8 +128,7 @@
             <img 
                 src="{{ asset('img/portrait-teenage-girl-listening-music-smiling-removebg-preview.png') }}" 
                 alt="Girl with headphones" 
-                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain scale-90"
-                style="margin-bottom:-50px;"
+                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain scale-90 -mb-6"
             />
         </div>
 
@@ -154,10 +153,11 @@
 
         <!-- Right Image -->
         <div class="flex justify-center">
-        <img 
+            <img 
                 src="{{ asset('img/pexels-sound-on-3394667-removebg-preview.png') }}" 
                 alt="Boy with headphones" 
-                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain"
+                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain 
+                    -mb-[0px] md:-mb-[88px]"
             />
         </div>
 </section>
@@ -178,12 +178,12 @@
     <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
       <div>
         <h3 class="text-lg font-bold text-orange-600">FREEMIUM</h3>
-        <p class="text-sm">No Activation Fee</p>
+        <p class="text-sm font-bold text-orange-600">No Activation Fee</p>
         <p class="text-3xl font-bold text-orange-600 my-2">$0</p>
-        <p class="text-xs mb-2">No Annual Fee</p>
+        <p class="text-xs mb-2 font-bold text-orange-600">No Annual Fee</p>
         <br>
-        <p class="text-xs mb-2">NO INCOME:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-gray-700">
+        <p class="text-xs mb-2 font-bold text-orange-600">NO INCOME:</p>
+        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
           <li>Unlimited Streaming</li>
           <li>Discover New Artists</li>
           <li>Accumulate Streaming Points</li>
@@ -198,12 +198,12 @@
     <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
       <div>
         <h3 class="text-lg font-bold text-orange-600">STUDENT</h3>
-        <p class="text-sm">For 16–24 Years Old</p>
+        <p class="text-sm font-bold text-orange-600">For 16–24 Years Old</p>
         <p class="text-3xl font-bold text-orange-600 my-2">$45</p>
-        <p class="text-xs mb-2">One-Time Fee + $12.87/yr</p>
+        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $12.87/yr</p>
         <br>
-        <p class="text-xs mb-2">2-WAYS TO EARN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-gray-700">
+        <p class="text-xs mb-2 font-bold text-orange-600">2-WAYS TO EARN:</p>
+        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
           <li>Streaming Income</li>
           <li>Direct Referral Bonus</li>
           <li>Eligigle for Concert Ticket Promos</li>
@@ -218,12 +218,12 @@
     <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
       <div>
         <h3 class="text-lg font-bold text-orange-600">SENIOR</h3>
-        <p class="text-sm">For 60 and Older</p>
+        <p class="text-sm font-bold text-orange-600">For 60 and Older</p>
         <p class="text-3xl font-bold text-orange-600 my-2">$45</p>
-        <p class="text-xs mb-2">One-Time Fee + $12.87/yr</p>
+        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $12.87/yr</p>
         <br>
-        <p class="text-xs mb-2">2-WAYS TO EARN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-gray-700">
+        <p class="text-xs mb-2 font-bold text-orange-600">2-WAYS TO EARN:</p>
+        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
           <li>Streaming Income</li>
           <li>Direct Referral Bonus</li>
           <li>Eligigle for Concert Ticket Promos</li>
@@ -238,12 +238,12 @@
     <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
       <div>
         <h3 class="text-lg font-bold text-orange-600">BASIC</h3>
-        <p class="text-sm">For 16 and Over</p>
+        <p class="text-sm font-bold text-orange-600">For 16 and Over</p>
         <p class="text-3xl font-bold text-orange-600 my-2">$60</p>
-        <p class="text-xs mb-2">One-Time Fee + $25.87/yr</p>
+        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $25.87/yr</p>
         <br>
-        <p class="text-xs mb-2">2-WAYS TO EARN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-gray-700">
+        <p class="text-xs mb-2 font-bold text-orange-600">2-WAYS TO EARN:</p>
+        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
           <li>Streaming Income</li>
           <li>Direct Referral Bonus</li>
           <li>Eligigle for Concert Ticket Promos</li>
@@ -258,12 +258,12 @@
     <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
       <div>
         <h3 class="text-lg font-bold text-orange-600">PREMIUM</h3>
-        <p class="text-sm">For 16 and Over</p>
+        <p class="text-sm font-bold text-orange-600">For 16 and Over</p>
         <p class="text-3xl font-bold text-orange-600 my-2">$120</p>
-        <p class="text-xs mb-2">One-Time Fee + $4.99/mo</p>
+        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $4.99/mo</p>
         <br>
-        <p class="text-xs mb-2">FULL COMPENSATION PLAN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-gray-700">
+        <p class="text-xs mb-2 font-bold text-orange-600">FULL COMPENSATION PLAN:</p>
+        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
           <li>Ad-Free Streaming experience</li>
           <li>Stream Income</li>
           <li>Share & Earn</li>
