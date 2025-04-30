@@ -206,7 +206,7 @@
       <!-- Wrapper: put form + image side by side and centered -->
 <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 px-4">
   
-  <!-- form on left -->
+  <!-- form on left updatestest-->
   <div class="max-w-md p-4 bg-white shadow-lg rounded-xl border border-orange-300">
     <h2 class="text-xl md:text-2xl font-extrabold text-orange-500 text-center">ARTIST SUBMISSION FORM</h2>
     <p class="text-center text-gray-700 font-semibold mt-1 mb-4 text-sm">EMBARK ON A MUSICAL ODYSSEY!</p>
