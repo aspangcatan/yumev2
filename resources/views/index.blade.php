@@ -168,51 +168,50 @@
     </div>
 </section>
 <section class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover pb-24">
-    <div class="mx-auto px-4 sm:px-12">
-        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+    <div class="mx-auto px-12">
+        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
             <!-- Left Side Image Column -->
-            <div class="relative flex flex-col sm:flex-row items-center gap-6 w-full h-full">
-                <!-- First image -->
+            <div class="relative flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full h-full">
+                <!-- First image with top margin -->
                 <img src="{{ asset('img/yume-artist-4.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-auto object-contain sm:object-cover mt-10 sm:mt-40"
+                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-8 sm:mt-40"
                      alt="Artist 1">
 
-                <!-- Middle image -->
+                <!-- Middle image, aligned at the top -->
                 <img src="{{ asset('img/yume-artist-2.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-auto object-contain sm:object-cover z-10"
+                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover z-10 sm:relative sm:bottom-0"
                      alt="Artist 2">
 
-                <!-- Third image -->
+                <!-- Third image with top margin -->
                 <img src="{{ asset('img/yume-artist-3.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-auto object-contain sm:object-cover mt-10 sm:mt-40"
+                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-8 sm:mt-40"
                      alt="Artist 3">
             </div>
 
             <!-- Right Side Content -->
-            <div class="text-white w-full flex flex-col space-y-6 h-full">
+            <div class="text-white text-center md:text-left space-y-6 w-full h-full flex flex-col">
                 <!-- Top Banner -->
                 <img src="{{ asset('img/yume-artist-5.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover mt-20"
-                     style="object-position: center 10%;"
-                     alt="Top Banner">
+                     class="w-full h-24 sm:h-32 object-cover mt-20" style="object-position: center 10%;" alt="Top Banner">
 
                 <!-- Text Content -->
-                <div class="flex flex-col justify-center items-center md:items-end text-center md:text-end">
+                <div class="flex flex-col justify-center items-center text-center">
                     <h2 class="text-3xl sm:text-[50px] font-extrabold">YUME Artists</h2>
 
-                    <p class="text-sm sm:text-md md:text-lg mt-5 max-w-3xl">
+                    <p class="text-sm sm:text-md md:text-lg mt-4 mt-5 max-w-3xl text-center sm:text-left">
                         Meet the rising stars shaping the future of music. YUME’s
-                        <span class="hidden sm:inline"><br/></span>
+                        <span class="hidden sm:inline-block"> <br /> </span>
                         global community is discovering tomorrow’s chart-toppers
-                        <span class="hidden sm:inline"><br/></span>
+                        <span class="hidden sm:inline-block"> <br /> </span>
                         today. Join our roster of talented artists and take the first step
-                        <span class="hidden sm:inline"><br/></span>
+                        <span class="hidden sm:inline-block"> <br /> </span>
                         toward living your dream.
                     </p>
 
-                    <div class="flex justify-center md:justify-end w-full mt-5">
+
+                    <div class="flex justify-center mt-5">
                         <a href="{{ route('artist') }}"
-                           class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition w-full sm:w-auto text-center">
+                           class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition max-w-3xl w-full text-center">
                             GET PUBLISHED FOR FREE
                         </a>
                     </div>
@@ -220,9 +219,7 @@
 
                 <!-- Bottom Banner -->
                 <img src="{{ asset('img/yume-artist-1.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover"
-                     style="object-position: center 10%;"
-                     alt="Bottom Banner">
+                     class="w-full h-24 sm:h-32 object-cover" style="object-position: center 10%;" alt="Top Banner">
             </div>
         </div>
     </div>
@@ -232,7 +229,7 @@
     <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0 px-4">
         <!-- Logo Section -->
         <div class="text-center md:text-left p-10">
-            <p class="text-base sm:text-4xl text-white mb-2 font-4xl">Listen to:</p>
+            <p class="text-base sm:text-4xl md:text-4xl text-white mb-2 font-4xl">Listen to:</p>
             <div class="mt-10">
                 <a href="{{ route('index') }}">
                     <img src="{{ asset('img/logo-yume.png') }}" alt="YUME Logo" class="h-13 sm:h-20 inline-block">
