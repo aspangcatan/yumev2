@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YUME - Discover Fresh Music</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,9 +37,13 @@
 <!-- Hero Section -->
 @include('layouts.header', ['active' => 'artist'])
 
-<section class="relative min-h-[80vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
+<section class="relative min-h-[66vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
     <!-- Background Image (Mirrored) -->
-    <img src="{{ asset('img/pexels-cottonbro-7087170.jpg') }}" alt="Background Image" class="absolute inset-0 w-full h-full object-cover opacity-70 scale-x-[-1]">
+    <img 
+      src="{{ asset('img/13.png') }}" 
+      alt="Background Image" 
+      class="absolute inset-0 w-full h-[300px] sm:h-[500px] object-cover"
+    >
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-10"></div>
@@ -46,20 +51,23 @@
     <!-- Content on top -->
     <div class="relative z-10 max-w-2xl">
         <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8">
-            CREATE TRACKS.<br>
-            <span class="text-yume-orange">GO VIRAL.</span><br>
-            EARN REWARDS.
+            MAKE MUSIC.<br>
+            GET <span class="text-yume-orange">DISCOVERED</span>.<br>
+            GET PAID.
         </h1>
-        <a href="#join" class="inline-block bg-white text-yume-orange hover:bg-gray-200 font-bold py-4 px-12 rounded-full transition">
-            JOIN NOW
+        <a 
+          href="#join" 
+          class="inline-block bg-white text-yume-orange hover:bg-gray-200 font-bold py-4 px-12 rounded-full transition mb-2.5 md:mb-0"
+        >
+          JOIN AS ARTIST
         </a>
     </div>
 </section>
 
-<section class="relative min-h-[60vh] flex flex-col items-center justify-center px-8 text-center text-white overflow-hidden">
+<section class="relative min-h-[60vh] bg-white flex flex-col items-center justify-center px-8 text-center text-white overflow-hidden">
 
     <!-- Background Image -->
-    <div class="absolute inset-0 bg-center bg-cover blur-sm" style="background-image: url('{{ asset('img/pexels-pixabay-164828.jpg') }}'); z-index: -2;"></div>
+    <!-- <div class="absolute inset-0 bg-center bg-cover blur-sm" style="background-image: url('{{ asset('img/pexels-pixabay-164828.jpg') }}'); z-index: -2;"></div> -->
 
     <!-- Dark Overlay -->
     <div class="absolute inset-0 bg-black opacity-40 z-[-1]"></div>
@@ -69,29 +77,30 @@
         What is Music Publishing?
     </h2>
 
-    <p class="max-w-3xl text-lg md:text-xl mb-4">
+    <p class="max-w-3xl text-lg text-gray-700 md:text-xl mb-4">
         Music publishing is a vital component of the music industry, encompassing the management and protection of musical compositions and their associated rights.
     </p>
-    <p class="max-w-3xl text-lg md:text-xl mb-10">
+    <p class="max-w-3xl text-lg text-gray-700 md:text-xl mb-10">
         It extends beyond printing sheet music to include licensing, royalty collection, and intellectual property protection.
     </p>
 
-    <a href="#learn-more" class="inline-block bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-full transition">
+    <a href="#learn-more" class="inline-block bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-full transition" style="margin-bottom:10px;">
         LEARN MORE
     </a>
-
 </section>
 
 
-<section class="bg-[#f6f6f6] py-20 px-6 md:px-20">
-  <div class="max-w-5xl mx-auto text-left space-y-16">
-
+<section 
+  class="bg-[url('{{ asset('img/14.png') }}')] bg-cover bg-center bg-[#3f2e33] py-15 px-6 md:px-20"
+>
+<br>
+<br>
     <!-- Key Components -->
     <div>
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-6">
         Key Components
       </h3>
-      <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+      <ul class="list-disc list-inside space-y-2 text-sm text-white">
         <li><strong>Licensing:</strong> Securing licenses for composition use in various mediums, such as recordings, performances and commercial projects.</li>
         <li><strong>Royalty Collection:</strong> Ensuring songwriters and composers receive compensation for their work’s use, involving tracking and collecting royalties.</li>
         <li><strong>Rights Management:</strong> Safeguarding composition rights, including copyright protection to ensure creators’ acknowledgment and compensation.</li>
@@ -106,7 +115,7 @@
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-6">
         The Role of YUME
       </h3>
-      <p class="text-lg text-gray-700 leading-relaxed">
+      <p class="text-sm text-white leading-relaxed">
         YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement. 
         We provide cutting-edge tools for digital promotion, showcasing talent and electrifying live performances on the global stage.
       </p>
@@ -117,7 +126,7 @@
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-6">
         Key Benefits Include
       </h3>
-      <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+      <ul class="list-disc list-inside space-y-2 text-sm text-white">
         <li><strong>Global Reach:</strong> Publishing music on over 100 platforms, including Yume, Spotify, Apple Music and TikTok.</li>
         <li><strong>Revenue Streams:</strong> Empowering fans through rewards for listening support and engagement.</li>
         <li><strong>Artist Support:</strong> Providing resources, branding managers and performance insights.</li>
@@ -125,53 +134,68 @@
         <li><strong>Marketing and Events:</strong> Amplifying artist presence through campaigns and world-class live event bookings.</li>
       </ul>
     </div>
-
-  </div>
+    <br>
+    <br>
 </section>
 
-
-<section class="relative bg-cover bg-center bg-no-repeat min-h-[70vh] flex items-center justify-center text-center" style="background-image: url('{{ asset('img/pexels-maorattias-5175347.jpg') }}');">
-  <div class="bg-black/50 w-full h-full absolute top-0 left-0"></div>
-
-  <div class="relative z-10 px-4">
-    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
-      We’ll track down all of the publishing <br class="hidden md:block" />
-      royalties you’re owed <span class="text-yume-orange">worldwide.</span>
+<section 
+  class="relative text-white bg-no-repeat bg-cover bg-center px-4 py-10"
+  style="background-image: url('{{ asset('img/15.png') }}');"
+>
+  <div class="relative z-10 max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl md:text-4xl font-extrabold leading-tight">
+      We’ll track down all of the publishing royalties
     </h1>
-    <p class="mt-6 text-lg md:text-xl text-white">
+    <h2 class="text-3xl md:text-3xl font-extrabold mt-4">
+      you’re owed <span class="text-orange-500">worldwide.</span>
+    </h2>
+    <p class="text-lg md:text-xl font-medium mt-6 mb-4">
       No complicated forms. No boring legal stuff. Just more money in your pocket.
     </p>
   </div>
+
+  <!-- Optional dark overlay for readability -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
 </section>
 
-<section class="flex flex-col items-center justify-center py-16 bg-[#fdf9fb] text-center px-4">
 
-    <div class="flex items-center justify-center flex-wrap gap-2 text-2xl md:text-4xl font-bold text-black">
-        <span>Join the</span>
+<section class="flex flex-col items-center justify-center py-16 bg-[#fdf9fb] text-center px-2">
 
-        <img src="{{ asset('img/logo-yume.png') }}" alt="Yume Logo" class="h-10 md:h-16 inline-block" />
+<div class="flex items-center justify-center flex-wrap gap-2 text-4xl md:text-6xl font-bold text-black">
+  <span>Join the</span>
 
-        <span>Community</span>
-    </div>
+  <img src="{{ asset('img/logo-yume.png') }}" alt="Yume Logo" class="h-12 md:h-20 inline-block" />
+
+  <span>Community</span>
+</div>
 
 </section>
 
-<section class="bg-[#1f2630] text-white px-6 py-16 text-center">
-    <!-- Intro Paragraph -->
-    <p class="max-w-4xl mx-auto mb-12 text-lg md:text-xl">
-        Elevate your musical journey to new heights with YUME. We invite visionary artists, skilled songwriters and passionate music enthusiasts to join our dynamic community.
-    </p>
+<section class="bg-[url('{{ asset('img/16.png') }}')] bg-cover bg-center text-white px-6 py-16 text-center">
     <!-- Main Content -->
     <div class="max-w-5xl mx-auto text-left space-y-10">
         <!-- Block 1 -->
         <div>
-            <h3 class="text-yume-orange text-2xl font-bold mb-2">Unlock Endless Opportunities</h3>
-            <ul class="space-y-1">
-                <li>Celebrate Your Passion: Share your music with a community that acknowledges and celebrates your creativity.</li>
-                <li>Recognize Your Talent: Gain the recognition you deserve for your unique sound and style.</li>
-                <li>Contribute to Something Extraordinary: Every note, melody and beat contributes to a collective symphony that resonates within our vibrant community.</li>
-            </ul>
+          <h3 class="text-yume-orange text-2xl font-bold mb-2">Unlock Endless Opportunities</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Celebrate Your Passion: Share your music with a community that acknowledges and celebrates your creativity.</li>
+            <li>Recognize Your Talent: Gain the recognition you deserve for your unique sound and style.</li>
+            <li>Contribute to Something Extraordinary: Every note, melody and beat contributes to a collective symphony that resonates within our vibrant community.</li>
+          </ul>
         </div>
+
+        <!-- Block 3 -->
+        <div>
+          <h3 class="text-yume-orange text-2xl font-bold mb-2">Benefits of Joining</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Meticulous Music Management: Trust us to handle the business side, freeing you to focus on your craft.</li>
+            <li>Global Reach: Publish your music on over 100 platforms, including YUME, Spotify, Apple Music and TikTok.</li>
+            <li>Revenue Streams: Empower your fans through rewards for listening support and engagement.</li>
+            <li>Maximize Your Earnings: Boost revenue through royalties, merchandising, NFTs, booked live performances and referrals.</li>
+            <li>Artist Support: Access resources, branding managers to fuel your success.</li>
+          </ul>
+        </div>
+
 
         <!-- Block 2 -->
         <div>
@@ -179,18 +203,6 @@
             <p>
                 Join YUME and transform your musical aspirations into something truly exceptional. Let YUME be the stage where your music comes alive.
             </p>
-        </div>
-
-        <!-- Block 3 -->
-        <div>
-            <h3 class="text-yume-orange text-2xl font-bold mb-2">Benefits of Joining</h3>
-            <ul class="space-y-1">
-                <li>Meticulous Music Management: Trust us to handle the business side, freeing you to focus on your craft.</li>
-                <li>Global Reach: Publish your music on over 100 platforms, including YUME, Spotify, Apple Music and TikTok.</li>
-                <li>Revenue Streams: Empower your fans through rewards for listening support and engagement.</li>
-                <li>Maximize Your Earnings: Boost revenue through royalties, merchandising, NFTs, booked live performances and referrals.</li>
-                <li>Artist Support: Access resources, branding managers to fuel your success.</li>
-            </ul>
         </div>
 
         <!-- Block 4 -->
@@ -203,64 +215,43 @@
     </div>
 </section>
 
-<section class="w-full flex items-center justify-center bg-[#ffc266] px-4 py-8 relative overflow-hidden">
-  <!-- Background Image on the right -->
-  <div class="absolute right-0 top-0 bottom-0 w-1/2 bg-no-repeat bg-contain bg-center" style="background-image: url('{{ asset('img/front-view-happy-woman-with-headphones.jpg') }}');"></div>
+<section class="relative bg-white bg-cover bg-center bg-no-repeat min-h-[120vh] flex  text-center" style="background-image: url('{{ asset('img/17.png') }}');">
 
-  <!-- Content/Form -->
-  <div class="relative z-10 max-w-7xl w-full flex justify-start pl-16">
-    
-  <div class="bg-white border border-orange-400 rounded-3xl p-6 shadow-lg max-w-md w-full">
-      
-      <h2 class="text-xl font-extrabold text-orange-600 text-center">ARTIST SUBMISSION FORM</h2>
-      <h3 class="text-sm font-semibold text-center mb-2">EMBARK ON A MUSICAL ODYSSEY!</h3>
-    
-      <p class="text-center text-xs text-gray-600 mb-2 leading-snug">
-        Ready to take your musical journey to new heights? Yume invites you to express your interest in joining our dynamic community.
-      </p>
-    
-      <p class="text-center text-xs text-gray-600 mb-4 leading-snug">
-        Whether you're an artist, songwriter, or music enthusiast, Yume celebrates your passion.
-      </p>
-    
-      <form class="space-y-3">
-        <input type="text" placeholder="Name*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-    
-        <input type="email" placeholder="Email Address*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-    
-        <div class="flex gap-2">
-          <select class="w-1/3 px-2 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs">
-            <option>us +1</option>
-            <option>uk +44</option>
-            <option>ind +91</option>
-          </select>
-          <input type="text" placeholder="Phone*" class="w-2/3 px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-        </div>
-    
-        <select class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" required>
-          <option>Please select country*</option>
-          <option>United States</option>
-          <option>United Kingdom</option>
-          <option>India</option>
-        </select>
-    
-        <textarea placeholder="Message*" class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-orange-500 text-black text-xs" rows="2" required></textarea>
-    
-        <button type="submit" class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-900 transition text-xs">Submit</button>
-      </form>
-    
-    </div>
-    
+<div class="max-w-xl w-fit h-fit ml-0 sm:ml-20 mt-12 p-8 border-2 border-black bg-white/10 backdrop-blur-md shadow-xl rounded-lg">
+  <h1 class="text-2xl font-extrabold text-orange-600 uppercase">Artist Submission Form</h1>
+  <h2 class="text-lg font-bold mt-1 mb-4 text-gray-800">Embark on a Musical Odyssey!</h2>
+  <p class="text-gray-800 mb-2 text-sm">
+    Ready to take your musical journey to unprecedented heights? Yume eagerly extends an invitation for you to express your interest in becoming part of our dynamic community, entrusting us with the meticulous management of your music.
+  </p>
+  <p class="text-gray-800 mb-2 text-sm">
+    Whether you’re a visionary artist, a skilled songwriter, or an impassioned music enthusiast, Yume opens its doors to a world where your passion isn’t just acknowledged; it’s celebrated.
+  </p>
+  <p class="text-gray-800 mb-2 text-sm">
+    Take the leap and join Yume, where every note, every melody, and every beat contributes to something extraordinary!
+  </p>
 
-  </div>
+  <form class="space-y-2">
+    <input type="text" placeholder="Name*" class="w-full px-4 py-2 border border-black placeholder-gray-500 bg-white/80 focus:outline-none focus:ring-2 focus:ring-orange-400 text-gray-800" />
+    <input type="email" placeholder="Email Address*" class="w-full px-4 py-2 border border-black placeholder-gray-500 bg-white/80 focus:outline-none focus:ring-2 focus:ring-orange-400 text-gray-800" />
+    <input type="tel" placeholder="Phone*" class="w-full px-4 py-2 border border-black placeholder-gray-500 bg-white/80 focus:outline-none focus:ring-2 focus:ring-orange-400 text-gray-800" />
+    <select class="w-full px-4 py-2 border border-black bg-white/80 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400">
+      <option disabled selected>Please select country*</option>
+      <option>United States</option>
+      <option>Canada</option>
+      <option>United Kingdom</option>
+      <option>Australia</option>
+      <option>Germany</option>
+      <option>India</option>
+      <option>Japan</option>
+    <!-- Add more as needed -->
+    </select>
+    <textarea placeholder="Message*" rows="4" class="w-full px-4 py-2 border border-black placeholder-gray-500 bg-white/80 focus:outline-none focus:ring-2 focus:ring-orange-400 text-gray-800"></textarea>
+  </form>
+</div>
 
 </section>
 
-
-
-
-
-
+@include('layouts.footer')
 
 <!-- Small Script for Mobile Menu -->
 <script>
