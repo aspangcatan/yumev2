@@ -103,11 +103,6 @@
         LEARN MORE
       </a>
     </div>
-
-    <!-- Right Image (Phone Mockup) -->
-    <div class="w-full md:w-[340px]">
-      <img src="{{ asset('img/phone-mockup.png') }}" alt="Phone Mockup" class="w-full h-auto">
-    </div>
   </div>
 </section>
 
@@ -261,49 +256,49 @@
   class="relative text-white bg-cover bg-center py-2 px-6 md:px-12"
   style="background-image: url('{{ asset('img/27.png') }}');"
 >
-<div class="flex flex-col md:flex-row justify-between items-start px-10 py-16 space-y-12 md:space-y-0 md:space-x-10">
-    <!-- Left Side: Get Started and Discover -->
-    <div class="flex-1 space-y-10 ml-20">
-        <!-- Get Started Now -->
-        <div>
-            <h2 class="text-lg font-semibold mb-3 text-gray-800">Get Started Now!</h2>
-            <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
-                <li>Download the free app</li>
-                <li>Create a free YUME account</li>
-                <li>Explore our music catalog</li>
-                <li>Discover new artists</li>
-                <li>Stream music and accumulate streaming points</li>
-            </ul>
+    <div class="flex flex-col md:flex-row justify-between items-start px-10 py-16 space-y-12 md:space-y-0 md:space-x-10">
+        <!-- Left Side: Get Started and Discover -->
+        <div class="flex-1 space-y-10 ml-0 md:ml-20">
+            <!-- Get Started Now -->
+            <div>
+                <h2 class="text-lg font-semibold mb-3 text-gray-800">Get Started Now!</h2>
+                <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
+                    <li>Download the free app</li>
+                    <li>Create a free YUME account</li>
+                    <li>Explore our music catalog</li>
+                    <li>Discover new artists</li>
+                    <li>Stream music and accumulate streaming points</li>
+                </ul>
+            </div>
+
+            <!-- Discover Limitless Earning Possibilities -->
+            <div>
+                <h2 class="text-gl font-semibold mb-3 text-gray-800">Discover Limitless Earning Possibilities</h2>
+                <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
+                    <li>Upgrade to a paid subscription account</li>
+                    <li>Stream music and start earning income</li>
+                    <li>Share and get paid even more</li>
+                </ul>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-6 w-full flex justify-center md:justify-start">
+                <a href="#"
+                class="bg-white text-orange-600 font-bold text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 rounded-full shadow-md border-2 border-white hover:bg-orange-100 transition w-full max-w-xs text-center">
+                    CREATE AN ACCOUNT
+                </a>
+            </div>
         </div>
 
-        <!-- Discover Limitless Earning Possibilities -->
-        <div>
-            <h2 class="text-gl font-semibold mb-3 text-gray-800">Discover Limitless Earning Possibilities</h2>
-            <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
-                <li>Upgrade to a paid subscription account</li>
-                <li>Stream music and start earning income</li>
-                <li>Share and get paid even more</li>
-            </ul>
-        </div>
-
-        <!-- CTA Button -->
-        <div class="mt-6 w-full flex justify-center md:justify-start">
-            <a href="#"
-            class="bg-white text-orange-600 font-bold text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 rounded-full shadow-md border-2 border-white hover:bg-orange-100 transition w-full max-w-xs text-center">
-                CREATE AN ACCOUNT
-            </a>
+        <!-- Right Side: Main Title -->
+        <div class="flex-2">
+            <h3 class="text-2xl md:text-5xl font-extrabold leading-tight text-black">
+                Subscribe. Stream. Share.
+                <br>
+                Get Paid. Simple.
+            </h3>
         </div>
     </div>
-
-    <!-- Right Side: Main Title -->
-    <div class="flex-2">
-        <h3 class="text-2xl md:text-5xl font-extrabold leading-tight text-black">
-            Subscribe. Stream. Share.
-            <br>
-            Get Paid. Simple.
-        </h3>
-    </div>
-</div>
 </section>
 
 @include('layouts.footer')
