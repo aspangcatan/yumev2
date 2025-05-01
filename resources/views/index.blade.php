@@ -126,18 +126,22 @@
 
     <!-- Centered Content -->
     <div class="relative z-10 w-full px-12 py-12 flex flex-col justify-end h-full">
-        <div class="flex flex-col items-end md:items-end md:text-left mx-8 md:mx-16">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl leading-tight mb-6 text-end">
+        <div class="flex flex-col items-center md:items-end text-center md:text-end mx-8 md:mx-16">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl leading-tight mb-6">
                 Your Stage to Shine on the <br>
-                <span
-                    class="text-yume-orange text-4xl font-extrabold sm:text-5xl md:text-[68px] text-end">Global Music Scene!</span>
+                <span class="text-yume-orange text-4xl font-extrabold sm:text-5xl md:text-[68px]">
+            Global Music Scene!
+        </span>
             </h2>
-            <p class="text-base sm:text-md md:text-lg mb-8 max-w-4xl text-end mt-10">
-                YUME.global empowers aspiring artists by providing a global platform where their music can <br/>
-                be heard, loved, and rewarded. Whether you’re an emerging indie star or an undiscovered <br/>
+            <p class="text-base sm:text-md md:text-lg mb-8 max-w-4xl mt-10 text-center md:text-end">
+                YUME.global empowers aspiring artists by providing a global platform where their music can
+                <span class="hidden sm:inline"><br/></span>
+                be heard, loved, and rewarded. Whether you’re an emerging indie star or an undiscovered
+                <span class="hidden sm:inline"><br/></span>
                 voice, YUME.global helps you break into the world stage.
             </p>
         </div>
+
 
         <!-- Bottom Row -->
         <div class="w-full mt-10">
@@ -164,47 +168,51 @@
     </div>
 </section>
 <section class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover pb-24">
-    <div class="mx-auto px-12">
-        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+    <div class="mx-auto px-4 sm:px-12">
+        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
             <!-- Left Side Image Column -->
-            <div class="relative flex flex-row sm:flex-row items-center gap-4 md:gap-6 w-full h-full">
-                <!-- First image with top margin -->
+            <div class="relative flex flex-col sm:flex-row items-center gap-6 w-full h-full">
+                <!-- First image -->
                 <img src="{{ asset('img/yume-artist-4.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-40 "
+                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-auto object-contain sm:object-cover mt-10 sm:mt-40"
                      alt="Artist 1">
 
-                <!-- Middle image, aligned at the top -->
+                <!-- Middle image -->
                 <img src="{{ asset('img/yume-artist-2.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover z-10 sm:relative sm:bottom-0"
+                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-auto object-contain sm:object-cover z-10"
                      alt="Artist 2">
 
-                <!-- Third image with top margin -->
+                <!-- Third image -->
                 <img src="{{ asset('img/yume-artist-3.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-40"
+                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-auto object-contain sm:object-cover mt-10 sm:mt-40"
                      alt="Artist 3">
             </div>
 
-
             <!-- Right Side Content -->
-            <div class="text-white text-center md:text-left space-y-6 w-full h-full flex flex-col">
+            <div class="text-white w-full flex flex-col space-y-6 h-full">
                 <!-- Top Banner -->
                 <img src="{{ asset('img/yume-artist-5.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover mt-20" style="object-position: center 10%;" alt="Top Banner">
+                     class="w-full h-24 sm:h-32 object-cover mt-20"
+                     style="object-position: center 10%;"
+                     alt="Top Banner">
 
                 <!-- Text Content -->
-                <div class="flex flex-col justify-center items-center text-center">
+                <div class="flex flex-col justify-center items-center md:items-end text-center md:text-end">
                     <h2 class="text-3xl sm:text-[50px] font-extrabold">YUME Artists</h2>
 
-                    <p class="text-sm sm:text-md md:text-lg mt-4 mt-5 max-w-3xl text-end">
-                        Meet the rising stars shaping the future of music. YUME’s<br/>
-                        global community is discovering tomorrow’s chart-toppers<br />
-                        today. Join our roster of talented artists and take the first step<br />
+                    <p class="text-sm sm:text-md md:text-lg mt-5 max-w-3xl">
+                        Meet the rising stars shaping the future of music. YUME’s
+                        <span class="hidden sm:inline"><br/></span>
+                        global community is discovering tomorrow’s chart-toppers
+                        <span class="hidden sm:inline"><br/></span>
+                        today. Join our roster of talented artists and take the first step
+                        <span class="hidden sm:inline"><br/></span>
                         toward living your dream.
                     </p>
 
-                    <div class="flex justify-start ml-0 sm:ml-20 md:ml-40 lg:ml-60 mt-5">
+                    <div class="flex justify-center md:justify-end w-full mt-5">
                         <a href="{{ route('artist') }}"
-                           class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition max-w-3xl w-full text-center">
+                           class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition w-full sm:w-auto text-center">
                             GET PUBLISHED FOR FREE
                         </a>
                     </div>
@@ -212,11 +220,14 @@
 
                 <!-- Bottom Banner -->
                 <img src="{{ asset('img/yume-artist-1.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover" style="object-position: center 10%;" alt="Top Banner">
+                     class="w-full h-24 sm:h-32 object-cover"
+                     style="object-position: center 10%;"
+                     alt="Bottom Banner">
             </div>
         </div>
     </div>
 </section>
+
 <section class="bg-gradient-to-b from-[#F15A29] to-white py-12">
     <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0 px-4">
         <!-- Logo Section -->
