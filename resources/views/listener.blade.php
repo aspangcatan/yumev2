@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YUME - Discover Fresh Music</title>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -36,302 +37,276 @@
 <!-- Hero Section -->
 @include('layouts.header', ['active' => 'listener'])
 
-<section 
-    class="relative bg-cover bg-no-repeat text-white" 
-    style="background-image: url('{{ asset('img/pexels-mart-production-8885424.jpg') }}'); background-position: center 30%;"
->
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Optional dark overlay -->
+<section class="relative min-h-[66vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
+  <!-- Background Image -->
+  <img 
+    src="{{ asset('img/18.png') }}" 
+    alt="Background Image" 
+    class="absolute inset-0 w-full h-[300px] sm:h-[500px] object-cover"
+  >
 
-    <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="text-center md:text-left">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-                <span class="block">ANYONE CAN</span>
-                <span class="block text-orange-500">TURN BEATS</span>
-                <span class="block">INTO BUCKS</span>
-            </h1>
-            <a 
-                href="#"
-                class="mt-6 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition"
-            >
-                DOWNLOAD THE FREE APP NOW
-            </a>
-        </div>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-2xl ml-0 sm:ml-24">
+    <div class="text-left">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        <span class="block">ANYONE CAN</span>
+        <span class="block">TURN <span class="text-orange-600">BEATS</span></span>
+        <span class="block">INTO BUCKS</span>
+      </h1>
+      <a 
+        href="#"
+        class="mt-6 inline-block bg-orange-600 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition"
+      >
+        DOWNLOAD THE APP NOW
+      </a>
     </div>
-</section>
-
-
-<section class="bg-white py-16 px-6 md:px-20">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12"> 
-       
-        <!-- Image + Button Container -->
-        <div class="w-full md:w-1/2 flex flex-col items-center">
-            <!-- Image -->
-            <img 
-                src="{{ asset('img/orignalphoto-removebg-preview.png') }}" 
-                alt="Person with guitar" 
-                class="object-contain"
-            />
-
-            <!-- Button -->
-            <a 
-                href="#" 
-                class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition"
-            >
-                LEARN MORE
-            </a>
-        </div>
-
-        <!-- Content -->
-        <div class="w-full md:w-1/2 text-center md:text-center">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500 leading-snug">
-                Download The App <br>
-                Subscribe & Earn.
-            </h2>
-            <p class="text-gray-800 mt-4 font-medium">
-                LOVE MUSIC? MONETIZE IT WITH YUME.
-            </p>
-
-            <div class="mt-6 space-y-4 text-sm text-gray-700">
-                <div>
-                    <p class="font-semibold text-orange-500">Unlock Financial Freedom</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Stream songs, earn income, discover new artists</li>
-                        <li>Share and amplify your earnings</li>
-                        <li>Break free from traditional music consumption</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-orange-500">Discover Limitless Earning Possibilities</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Download the App and create a Yume account</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section 
-    class="relative bg-cover bg-center bg-no-repeat px-3 md:px-20 text-black"
-    style="background-image: url('{{ asset('img/backgroundimage.jpg') }}');"
->
-    <!-- Light overlay to brighten the background -->
-    <div class="absolute inset-0 bg-white bg-opacity-40"></div>
-
-    <!-- Main content -->
-    <div class="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-
-        <!-- Left Image -->
-        <div class="flex justify-center">
-            <img 
-                src="{{ asset('img/portrait-teenage-girl-listening-music-smiling-removebg-preview.png') }}" 
-                alt="Girl with headphones" 
-                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain scale-90 -mb-6"
-            />
-        </div>
-
-        <!-- Center Content -->
-        <div class="w-full md:w-2/4 text-center md:text-left">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500 leading-snug">
-                Choose A Plan <br>
-                That’s Right For You.
-            </h2>
-            <p class="mt-4 text-base font-medium text-gray-700">
-                5 Flexible Plans for Music Lovers
-            </p>
-            <div class="mt-6 text-sm text-gray-800 space-y-2">
-                <p class="text-orange-500 font-semibold">Plan Upgrade Option</p>
-                <ul class="list-disc list-inside ml-4">
-                    <li>Upgrade from Freemium, Student, Senior, or Basic to Premium anytime</li>
-                    <li>Pay only the difference</li>
-                    <li>Streaming points and earnings carry over</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Right Image -->
-        <div class="flex justify-center">
-            <img 
-                src="{{ asset('img/pexels-sound-on-3394667-removebg-preview.png') }}" 
-                alt="Boy with headphones" 
-                class="w-[220px] md:w-[320px] lg:w-[400px] max-w-none max-h-[500px] object-contain 
-                    -mb-[0px] md:-mb-[88px]"
-            />
-        </div>
-</section>
-
-
-<section class="bg-[#121926] text-white py-12 px-4">
-  <div class="text-center mb-10">
-    <h2 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">
-      Choose A Plan That’s Right For You
-    </h2>
-    <p class="text-sm md:text-base text-white/80">
-      5 Flexible Plans For Music Lovers
-    </p>
   </div>
+</section>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-7xl mx-auto">
+<section 
+  class="relative bg-cover bg-center bg-no-repeat px-3 md:px-20 py-16 text-white"
+  style="background-image: url('{{ asset('img/19.png') }}');"
+>
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <!-- Left Content -->
+    <div class="max-w-xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        Download The App<br />
+        Subscribe & Earn.
+      </h1>
+      <h2 class="text-2xl text-orange-500 font-semibold mb-6">
+        Love music?<br />
+        Monetize it with Yume.
+      </h2>
+
+      <div class="space-y-6 text-white text-lg">
+        <div>
+          <h3 class="font-bold">Unlock Financial Freedom</h3>
+          <ul class="list-disc list-inside text-sm">
+            <li>Stream songs, earn income, discover new artists</li>
+            <li>Share and amplify your earnings</li>
+            <li>Break free from traditional music consumption</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold">Discover Limitless Earning Possibilities</h3>
+          <ul class="list-disc list-inside text-sm">
+            <li>Download the App and create a Yume account</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#" class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition">
+        LEARN MORE
+      </a>
+    </div>
+
+    <!-- Right Image (Phone Mockup) -->
+    <div class="w-full md:w-[340px]">
+      <img src="{{ asset('img/phone-mockup.png') }}" alt="Phone Mockup" class="w-full h-auto">
+    </div>
+  </div>
+</section>
+
+
+<section 
+  class="relative text-white bg-cover bg-center py-16 px-6 md:px-12"
+  style="background-image: url('{{ asset('img/20.png') }}');"
+>
+  <div class="flex justify-end items-start">
+    <div class="max-w-2xl text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Choose The Right<br />
+        Plan For You.
+      </h1>
+      <h2 class="text-2xl md:text-3xl font-semibold mt-4 text-orange-500">
+        5 Flexible plans for music lovers.
+      </h2>
+
+      <div class="mt-8 text-sm md:text-base text-white">
+        <h3 class="font-semibold mb-2">Subscription Plan Upgrade Option</h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-100 pl-5">
+          <li>Upgrade from either Freemium, Student, Senior, or Basic to Premium anytime</li>
+          <li>Pay only the difference</li>
+          <li>Streaming points and earnings carry over</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gradient-to-l from-gray-100 to-white py-16 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
+
     <!-- FREEMIUM -->
-    <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
-      <div>
-        <h3 class="text-lg font-bold text-orange-600">FREEMIUM</h3>
-        <p class="text-sm font-bold text-orange-600">No Activation Fee</p>
-        <p class="text-3xl font-bold text-orange-600 my-2">$0</p>
-        <p class="text-xs mb-2 font-bold text-orange-600">No Annual Fee</p>
-        <br>
-        <p class="text-xs mb-2 font-bold text-orange-600">NO INCOME:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
+    <div class="bg-black bg-opacity-60 text-white p-6 rounded-md relative overflow-hidden">
+      <img src="{{ asset('img/23.jpg') }}" alt="Freemium" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-br from-black/80 to-black/40 z-0"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-bold">FREEMIUM</h3>
+        <p class="text-sm mb-4">FOR 16 AND OVER</p>
+        <p class="text-6xl text-white" style="font-family: 'Bangers', cursive;">
+            <span class="align-top text-3xl">$</span>0
+        </p>
+        <p class="mb-2">NO ACTIVATION FEE<br>No Annual Fee</p>
+        <h4 class="text-sm font-semibold mt-4">NO INCOME:</h4>
+        <ul class="text-sm list-disc list-inside">
           <li>Unlimited Streaming</li>
           <li>Discover New Artists</li>
           <li>Accumulate Streaming Points</li>
         </ul>
+        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
       </div>
-      <button class="mt-4 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-full">
-        LEARN MORE
-      </button>
     </div>
 
     <!-- STUDENT -->
-    <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
-      <div>
-        <h3 class="text-lg font-bold text-orange-600">STUDENT</h3>
-        <p class="text-sm font-bold text-orange-600">For 16–24 Years Old</p>
-        <p class="text-3xl font-bold text-orange-600 my-2">$45</p>
-        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $12.87/yr</p>
-        <br>
-        <p class="text-xs mb-2 font-bold text-orange-600">2-WAYS TO EARN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
+    <div class="bg-black bg-opacity-60 text-white p-6 rounded-md relative overflow-hidden">
+      <img src="{{ asset('img/22.jpg') }}" alt="Student" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <!-- Colored Gradient Overlay -->
+       <div class="absolute inset-0 bg-gradient-to-br from-green-900/60 via-yellow-700/40 to-yellow-500/20 z-0"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-bold">STUDENT</h3>
+        <p class="text-sm mb-4">FOR 16–24 YEARS OLD</p>
+        <p class="text-6xl text-white" style="font-family: 'Bangers', cursive;">
+            <span class="align-top text-3xl">$</span>45
+        </p>
+        <p class="mb-2">ONE TIME ACTIVATION FEE<br>$12.87 annually</p>
+        <h4 class="text-sm font-semibold mt-4">2-WAYS TO EARN:</h4>
+        <ul class="text-xs list-disc list-inside">
           <li>Streaming Income</li>
           <li>Direct Referral Bonus</li>
-          <li>Eligigle for Concert Ticket Promos</li>
+          <li>Eligible for Concert Ticket Promos</li>
         </ul>
+        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
       </div>
-      <button class="mt-4 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-full">
-        LEARN MORE
-      </button>
     </div>
 
     <!-- SENIOR -->
-    <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
-      <div>
-        <h3 class="text-lg font-bold text-orange-600">SENIOR</h3>
-        <p class="text-sm font-bold text-orange-600">For 60 and Older</p>
-        <p class="text-3xl font-bold text-orange-600 my-2">$45</p>
-        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $12.87/yr</p>
-        <br>
-        <p class="text-xs mb-2 font-bold text-orange-600">2-WAYS TO EARN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
+    <div class="bg-black bg-opacity-60 text-white p-6 rounded-md relative overflow-hidden">
+      <img src="{{ asset('img/24.jpg') }}" alt="Senior" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-800/60 via-purple-500/40 to-pink-400/20 z-0"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-bold">SENIOR</h3>
+        <p class="text-sm mb-4">FOR 60 AND OLDER</p>
+        <p class="text-6xl text-white" style="font-family: 'Bangers', cursive;">
+            <span class="align-top text-3xl">$</span>45
+        </p>
+        <p class="mb-2">ONE TIME ACTIVATION FEE<br>$12.87 annually</p>
+        <h4 class="text-sm font-semibold mt-4">2-WAYS TO EARN:</h4>
+        <ul class="text-xs list-disc list-inside">
           <li>Streaming Income</li>
           <li>Direct Referral Bonus</li>
-          <li>Eligigle for Concert Ticket Promos</li>
+          <li>Eligible for Concert Ticket Promos</li>
         </ul>
+        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
       </div>
-      <button class="mt-4 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-full">
-        LEARN MORE
-      </button>
     </div>
 
     <!-- BASIC -->
-    <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
-      <div>
-        <h3 class="text-lg font-bold text-orange-600">BASIC</h3>
-        <p class="text-sm font-bold text-orange-600">For 16 and Over</p>
-        <p class="text-3xl font-bold text-orange-600 my-2">$60</p>
-        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $25.87/yr</p>
-        <br>
-        <p class="text-xs mb-2 font-bold text-orange-600">2-WAYS TO EARN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
+    <div class="bg-black bg-opacity-60 text-white p-6 rounded-md relative overflow-hidden">
+      <img src="{{ asset('img/25.jpg') }}" alt="Basic" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-br from-pink-900/60 via-purple-600/40 to-orange-400/20 z-0"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-bold">BASIC</h3>
+        <p class="text-sm mb-4">FOR 25–59 YEARS OLD</p>
+        <p class="text-6xl text-white" style="font-family: 'Bangers', cursive;">
+            <span class="align-top text-3xl">$</span>60
+        </p>
+        <p class="mb-2">ONE TIME ACTIVATION FEE<br>$25.87 annually</p>
+        <h4 class="text-sm font-semibold mt-4">2-WAYS TO EARN:</h4>
+        <ul class="text-xs list-disc list-inside">
           <li>Streaming Income</li>
           <li>Direct Referral Bonus</li>
-          <li>Eligigle for Concert Ticket Promos</li>
+          <li>Eligible for Concert Ticket Promos</li>
         </ul>
+        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
       </div>
-      <button class="mt-4 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-full">
-        LEARN MORE
-      </button>
     </div>
 
     <!-- PREMIUM -->
-    <div class="bg-white text-[#121926] rounded-xl shadow p-4 flex flex-col justify-between">
-      <div>
-        <h3 class="text-lg font-bold text-orange-600">PREMIUM</h3>
-        <p class="text-sm font-bold text-orange-600">For 16 and Over</p>
-        <p class="text-3xl font-bold text-orange-600 my-2">$120</p>
-        <p class="text-xs mb-2 font-bold text-orange-600">One-Time Fee + $4.99/mo</p>
-        <br>
-        <p class="text-xs mb-2 font-bold text-orange-600">FULL COMPENSATION PLAN:</p>
-        <ul class="text-sm list-disc list-inside space-y-1 text-orange-600">
-          <li>Ad-Free Streaming experience</li>
-          <li>Stream Income</li>
-          <li>Share & Earn</li>
+    <div class="bg-black bg-opacity-60 text-white p-6 rounded-md relative overflow-hidden">
+      <img src="{{ asset('img/26.jpg') }}" alt="Premium" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <!-- Colored Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-red-800/60 via-orange-600/40 to-yellow-300/20 z-0"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-bold">PREMIUM</h3>
+        <p class="text-sm mb-4">FOR 16 AND OVER</p>
+        <p class="text-6xl text-white" style="font-family: 'Bangers', cursive;">
+            <span class="align-top text-3xl">$</span>120
+        </p>
+        <p class="mb-2">ONE TIME ACTIVATION FEE<br>$4.99 monthly subscription</p>
+        <h4 class="text-sm font-semibold mt-4">FULL COMPENSATION PLAN:</h4>
+        <ul class="text-xs list-disc list-inside">
+          <li>Ad-Free Streaming Experience</li>
+          <li>Streaming Income</li>
+          <li>Share and Earn</li>
           <li>Eligible for Concert Ticket Promos</li>
-          <li>Early Access Privilege</li>
-          <li>Discount on Merch purchases</li>
-          <li>Discount on Product purchases</li>
-          <li>Access to rewards programs</li>
+          <li>Early Access Privileges</li>
+          <li>Discounts on Merch Purchases</li>
+          <li>Discount on Product Purchases</li>
+          <li>Access to Rewards Program</li>
         </ul>
-      </div>
-      <button class="mt-4 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-full">
-        LEARN MORE
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<section class="relative bg-cover bg-center text-white px-6 md:px-12" style="background-image: url('{{ asset('img/editedbgimage.jpg') }}')">
-  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
-    
-    <!-- Left Content -->
-    <div class="text-center lg:text-center lg:w-1/3">
-      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-        Subscribe.<br />
-        Stream. Share.<br />
-        Get Paid. Simple.
-      </h2>
-      <a href="#" class="inline-block mt-4 bg-orange-500 hover:bg-orange-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition">
-        CREATE YOUR ACCOUNT NOW
-      </a>
-    </div>
-
-    <!-- Center Image -->
-    <div class="lg:w-1/3 flex justify-center">
-      <img 
-        src="{{ asset('img/neweditedimage-removebg-preview.png') }}" 
-        alt="Person streaming music" 
-        class="w-[220px] md:w-[280px] lg:w-[320px] h-auto object-contain"
-      />
-    </div>
-
-    <!-- Right Content -->
-    <div class="text-white lg:w-1/3 text-sm md:text-base">
-      <div class="mb-6">
-        <h3 class="text-lg md:text-xl font-bold mb-2">Get Started Now!</h3>
-        <ul class="list-disc list-inside space-y-1 text-white/90">
-          <li>Download the free app</li>
-          <li>Create a free YUME account</li>
-          <li>Explore our music catalog</li>
-          <li>Discover new artists</li>
-          <li>Stream music and accumulate points</li>
-        </ul>
-      </div>
-      <div class="mb-10">
-        <h3 class="text-lg md:text-xl font-bold mb-2">Limitless Earnings</h3>
-        <ul class="list-disc list-inside space-y-1 text-white/90">
-          <li>Upgrade to a paid account</li>
-          <li>Stream music and earn income</li>
-          <li>Share and earn even more</li>
-        </ul>
+        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
       </div>
     </div>
 
   </div>
 </section>
 
+<section 
+  class="relative text-white bg-cover bg-center py-2 px-6 md:px-12"
+  style="background-image: url('{{ asset('img/27.png') }}');"
+>
+<div class="flex flex-col md:flex-row justify-between items-start px-10 py-16 space-y-12 md:space-y-0 md:space-x-10">
+    <!-- Left Side: Get Started and Discover -->
+    <div class="flex-1 space-y-10 ml-20">
+        <!-- Get Started Now -->
+        <div>
+            <h2 class="text-lg font-semibold mb-3 text-gray-800">Get Started Now!</h2>
+            <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
+                <li>Download the free app</li>
+                <li>Create a free YUME account</li>
+                <li>Explore our music catalog</li>
+                <li>Discover new artists</li>
+                <li>Stream music and accumulate streaming points</li>
+            </ul>
+        </div>
 
+        <!-- Discover Limitless Earning Possibilities -->
+        <div>
+            <h2 class="text-gl font-semibold mb-3 text-gray-800">Discover Limitless Earning Possibilities</h2>
+            <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
+                <li>Upgrade to a paid subscription account</li>
+                <li>Stream music and start earning income</li>
+                <li>Share and get paid even more</li>
+            </ul>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="mt-6 w-full flex justify-center md:justify-start">
+            <a href="#"
+            class="bg-white text-orange-600 font-bold text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 rounded-full shadow-md border-2 border-white hover:bg-orange-100 transition w-full max-w-xs text-center">
+                CREATE AN ACCOUNT
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Side: Main Title -->
+    <div class="flex-2">
+        <h3 class="text-2xl md:text-5xl font-extrabold leading-tight text-black">
+            Subscribe. Stream. Share.
+            <br>
+            Get Paid. Simple.
+        </h3>
+    </div>
+</div>
+</section>
+
+@include('layouts.footer')
 
 
 <!-- Small Script for Mobile Menu -->
