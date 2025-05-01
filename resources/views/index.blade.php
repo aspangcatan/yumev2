@@ -6,6 +6,8 @@
     <title>YUME - Discover Fresh Music</title>
 
     <!-- Tailwind CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -37,7 +39,7 @@
 </head>
 <body class="bg-black text-white">
 <section
-    class="relative min-h-screen md:min-h-[60vh] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
+    class="relative min-h-[calc(74vh-100px)] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
 
     <!-- Decorative Dots Background -->
     <img src="{{ asset('img/img-bg-dots-1.png') }}"
@@ -47,9 +49,9 @@
     @include('layouts.header', ['active' => 'home'])
 
     <div
-        class="flex flex-col justify-center items-center text-center min-h-[calc(100vh-100px)] px-6 sm:px-10 relative z-10">
+        class="flex flex-col justify-center items-center text-center min-h-[calc(74vh-100px)] px-6 sm:px-10 relative z-10">
         <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
-            DISCOVER & STREAM <br class="hidden sm:block"> FRESH NEW MUSIC
+            DISCOVER & STREAM FRESH NEW MUSIC
         </h1>
         <p class="text-base sm:text-lg md:text-xl max-w-2xl mb-8">
             YUME connects emerging artists with global listeners.
@@ -160,30 +162,34 @@
             </div>
         </div>
     </div>
-
 </section>
-
-
-<section class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover">
+<section class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover pb-24">
     <div class="mx-auto px-12">
-        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-start py-10">
+        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+            <!-- Left Side Image Column -->
             <div class="relative flex flex-row sm:flex-row items-center gap-4 md:gap-6 w-full h-full">
+                <!-- First image with top margin -->
                 <img src="{{ asset('img/yume-artist-4.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-full object-contain sm:object-cover sm:relative sm:bottom-0"
+                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-40 "
                      alt="Artist 1">
+
+                <!-- Middle image, aligned at the top -->
                 <img src="{{ asset('img/yume-artist-2.png') }}"
                      class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover z-10 sm:relative sm:bottom-0"
                      alt="Artist 2">
+
+                <!-- Third image with top margin -->
                 <img src="{{ asset('img/yume-artist-3.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover sm:relative sm:bottom-0"
+                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-40"
                      alt="Artist 3">
             </div>
+
 
             <!-- Right Side Content -->
             <div class="text-white text-center md:text-left space-y-6 w-full h-full flex flex-col">
                 <!-- Top Banner -->
                 <img src="{{ asset('img/yume-artist-5.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover" style="object-position: center 10%;" alt="Top Banner">
+                     class="w-full h-24 sm:h-32 object-cover mt-20" style="object-position: center 10%;" alt="Top Banner">
 
                 <!-- Text Content -->
                 <div class="flex flex-col justify-center items-center text-center">
@@ -213,20 +219,18 @@
 </section>
 <section class="bg-gradient-to-b from-[#F15A29] to-white py-12">
     <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0 px-4">
-        <!-- Heading -->
+        <!-- Logo Section -->
         <div class="text-center md:text-left p-10">
-            <!-- New text above the logo -->
-            <p class="text-base sm:text-4xl text-[#F15C29] mb-2 font-4xl">Listen to:</p>
-
-            <!-- Logo with increased size -->
-            <a href="{{ route('index') }}">
-                <img src="{{ asset('img/logo-yume.png') }}" alt="YUME Logo" class="h-13 sm:h-20 inline-block">
-            </a>
+            <p class="text-base sm:text-4xl text-white mb-2 font-4xl">Listen to:</p>
+            <div class="mt-10">
+                <a href="{{ route('index') }}">
+                    <img src="{{ asset('img/logo-yume.png') }}" alt="YUME Logo" class="h-13 sm:h-20 inline-block">
+                </a>
+            </div>
         </div>
 
-
-        <!-- YouTube Playlist -->
-        <div class="w-full max-w-xl">
+        <!-- YouTube Playlist (moved further right) -->
+        <div class="w-full max-w-xl ml-auto pl-8">
             <iframe
                 src="https://www.youtube.com/embed/videoseries?si=AUMCF01JQKqOoHSv&amp;list=PLjLOGm1HDJ7gT61c9qGutu-hw5Fye3iLq&amp;rel=0&amp;autoplay=0"
                 title="YUME Artists Playlist"
