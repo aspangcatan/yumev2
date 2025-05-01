@@ -220,13 +220,13 @@
 <div class="max-w-xl w-fit h-fit ml-0 sm:ml-20 mt-12 p-8 border-2 border-black bg-white/10 backdrop-blur-md shadow-xl rounded-lg">
   <h1 class="text-2xl font-extrabold text-orange-600 uppercase">Artist Submission Form</h1>
   <h2 class="text-lg font-bold mt-1 mb-4 text-gray-800">Embark on a Musical Odyssey!</h2>
-  <p class="text-gray-800 mb-2 text-sm">
+  <p class="text-gray-800 mb-2 text-xs">
     Ready to take your musical journey to unprecedented heights? Yume eagerly extends an invitation for you to express your interest in becoming part of our dynamic community, entrusting us with the meticulous management of your music.
   </p>
-  <p class="text-gray-800 mb-2 text-sm">
+  <p class="text-gray-800 mb-2 text-xs">
     Whether you’re a visionary artist, a skilled songwriter, or an impassioned music enthusiast, Yume opens its doors to a world where your passion isn’t just acknowledged; it’s celebrated.
   </p>
-  <p class="text-gray-800 mb-2 text-sm">
+  <p class="text-gray-800 mb-2 text-xs">
     Take the leap and join Yume, where every note, every melody, and every beat contributes to something extraordinary!
   </p>
 
@@ -246,6 +246,10 @@
     <!-- Add more as needed -->
     </select>
     <textarea placeholder="Message*" rows="4" class="w-full px-4 py-2 border border-black placeholder-gray-500 bg-white/80 focus:outline-none focus:ring-2 focus:ring-orange-400 text-gray-800"></textarea>
+        <!-- Submit Button -->
+  <button type="submit" class="w-full bg-orange-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-900 transition">
+    Submit
+  </button>
   </form>
 </div>
 
