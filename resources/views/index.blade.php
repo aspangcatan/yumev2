@@ -80,8 +80,10 @@
                 <div class="text-3xl sm:text-4xl pt-2">Now you can turn that passion into rewards.</div>
             </h2>
             <p class="text-md sm:text-lg text-black-700 mb-8 leading-relaxed my-10 text-left">
-                YUME is more than just a music platform — it's a movement where passionate listeners<span class="hidden sm:inline"><br/></span>
-                and independent artists come together. Stream exclusive tracks, uncover future stars,<span class="hidden sm:inline"><br/></span>
+                YUME is more than just a music platform — it's a movement where passionate listeners<span
+                    class="hidden sm:inline"><br/></span>
+                and independent artists come together. Stream exclusive tracks, uncover future stars,<span
+                    class="hidden sm:inline"><br/></span>
                 and earn rewards for being part of the next big thing.
             </p>
             <div class="sm:ml-5">
@@ -134,12 +136,13 @@
         <!-- Content Width Container -->
         <div class="w-full md:max-w-none md:px-16">
 
-        <!-- Text Content -->
+            <!-- Text Content -->
             <div class="text-content">
                 <h2 class="mb-8 leading-tight text-left sm:text-end">
                 <span class="whitespace-nowrap text-2xl sm:text-3xl md:text-4xl">
                     Your stage to shine on the
                 </span>
+
                     <br>
                     <span class="whitespace-nowrap text-yume-orange text-4xl font-extrabold sm:text-5xl md:text-[68px]">
                     Global Music Scene!
@@ -147,15 +150,17 @@
                 </h2>
 
                 <p class="text-base sm:text-md md:text-lg mb-8 mt-10 text-start md:text-end">
-                    YUME empowers aspiring artists by providing a global platform where their music can be<span class="hidden sm:inline"><br /></span>
-                    heard, loved, and rewarded. Whether you’re an emerging indie star or an undiscovered<span class="hidden sm:inline"><br /></span>
+                    YUME empowers aspiring artists by providing a global platform where their music can be<span
+                        class="hidden sm:inline"><br/></span>
+                    heard, loved, and rewarded. Whether you’re an emerging indie star or an undiscovered<span
+                        class="hidden sm:inline"><br/></span>
                     voice, YUME.global helps you break into the world stage.
                 </p>
             </div>
 
             <!-- Bottom Row (follows h2 width) -->
             <!-- Bottom Row -->
-            <div class="mt-20">
+            <div class="mt-10 sm:mt-20">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                     <!-- List -->
                     <ul class="list-disc text-yume-orange text-lg sm:text-xl font-semibold tracking-wide pl-5 ml-2 md:pl-20 md:ml-4 w-full text-start">
@@ -166,7 +171,7 @@
 
                     <!-- CTA Button -->
                     <a href="#"
-                       class="bg-white text-yume-orange font-bold py-4 px-16 md:px-20 rounded-full transition hover:bg-gray-100 text-xl whitespace-nowrap">
+                       class="bg-white text-yume-orange font-bold py-4 px-16 md:px-20 rounded-full transition hover:bg-gray-100 text-xl whitespace-nowrap mt-3 sm:mt-0">
                         LEARN MORE
                     </a>
 
@@ -178,11 +183,47 @@
 </section>
 
 
+<section
+    class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover pb-0 md:pb-24">
+    <div class="mx-auto px-7 sm:px-20">
+        <div class="overflow-hidden">
+            <!-- Mobile: Horizontal Scroll with 2 images visible at a time -->
+            <div class="md:hidden">
+                <div class="flex flex-col justify-center items-start w-full">
+                    <h2 class="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mt-8">YUME Artists</h2>
+
+                    <p class="text-md sm:text-lg md:text-xl mt-4 mt-5 max-w-3xl">
+                        Meet the rising stars shaping the future of music. YUME’s
+                        <span class="hidden sm:inline-block"> <br/> </span>
+                        global community is discovering tomorrow’s chart-toppers
+                        <span class="hidden sm:inline-block"> <br/> </span>
+                        today. Join our roster of talented artists and take the first step
+                        <span class="hidden sm:inline-block"> <br/> </span>
+                        toward living your dream.
+                    </p>
+                </div>
+
+                <div class="flex overflow-x-auto py-8 scrollbar-hide snap-x snap-mandatory">
+                    @foreach (range(1, 5) as $index)
+                        <div class="relative overflow-hidden rounded-xl flex-none w-[calc(50%-0.5rem)] mx-1 snap-center"
+                             style="aspect-ratio: 3/4;">
+                            <img src="{{ asset("img/new-yume-artist-$index.png") }}"
+                                 class="w-full h-full object-contain"
+                                 alt="YUME Artist {{ $index }}">
+                        </div>
+                    @endforeach
+                </div>
 
 
-<section class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover pb-24">
-    <div class="mx-auto px-12">
-        <div class="relative w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+                <div class="flex justify-center">
+                    <a href="{{ route('artist') }}"
+                       class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition max-w-3xl w-full text-center">
+                        GET PUBLISHED FOR FREE
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full hidden md:grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
             <!-- Left Side Image Column -->
             <div class="relative flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full h-full">
                 <!-- First image with top margin -->
@@ -210,15 +251,12 @@
 
                 <!-- Text Content -->
                 <div class="flex flex-col justify-center items-center text-center">
-                    <h2 class="text-3xl sm:text-[50px] font-extrabold">YUME Artists</h2>
+                    <h2 class="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">YUME Artists</h2>
 
-                    <p class="text-sm sm:text-md md:text-lg mt-4 mt-5 max-w-3xl text-center sm:text-left">
-                        Meet the rising stars shaping the future of music. YUME’s
-                        <span class="hidden sm:inline-block"> <br/> </span>
-                        global community is discovering tomorrow’s chart-toppers
-                        <span class="hidden sm:inline-block"> <br/> </span>
-                        today. Join our roster of talented artists and take the first step
-                        <span class="hidden sm:inline-block"> <br/> </span>
+                    <p class="text-md sm:text-lg md:text-xl mt-4 mt-5 max-w-3xl text-start sm:text-end">
+                        Meet the rising stars shaping the future of music. YUME’s<br/>
+                        global community is discovering tomorrow’s chart-toppers<br/>
+                        today. Join our roster of talented artists and take the first step<br/>
                         toward living your dream.
                     </p>
 
@@ -243,7 +281,8 @@
     <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0 px-4">
         <!-- Logo Section -->
         <div class="text-center md:text-left p-10">
-            <p class="text-base sm:text-4xl md:text-4xl text-white mb-2 font-4xl">Listen to:</p>
+            <p class="text-start text-4xl sm:text-3xl md:text-5xl text-[#F15A29] mb-2">Listen to:</p>
+
             <div class="mt-10">
                 <a href="{{ route('index') }}">
                     <img src="{{ asset('img/logo-yume.png') }}" alt="YUME Logo" class="h-13 sm:h-20 inline-block">
@@ -251,8 +290,8 @@
             </div>
         </div>
 
-        <!-- YouTube Playlist (moved further right) -->
-        <div class="w-full max-w-xl ml-auto pl-8">
+        <!-- YouTube Playlist -->
+        <div class="w-full max-w-xl mx-auto sm:pl-0 md:pl-8">
             <iframe
                 src="https://www.youtube.com/embed/videoseries?si=AUMCF01JQKqOoHSv&amp;list=PLjLOGm1HDJ7gT61c9qGutu-hw5Fye3iLq&amp;rel=0&amp;autoplay=0"
                 title="YUME Artists Playlist"
@@ -265,8 +304,11 @@
     </div>
 </section>
 
+
 <section
-    class="relative pt-8 text-white px-4 sm:px-8 overflow-hidden bg-[url('{{ asset('img/img-home-4.png') }}')] bg-no-repeat bg-cover">
+    class="relative pt-8 text-white px-4 sm:px-8 overflow-hidden bg-no-repeat bg-cover
+           bg-gradient-to-r from-[#6B7064] to-[#867B6C]
+           sm:bg-[url('{{ asset('img/img-home-4.png') }}')]">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/15 z-10 pointer-events-none"></div>
 
@@ -274,25 +316,23 @@
     <div class="relative z-10 max-w-7xl mx-auto z-20 pt-10 pb-10">
         <div class="flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 lg:space-x-10">
             <!-- Left Text Section -->
-            <div class="text-left max-w-xl px-4 sm:px-6 space-y-20 text-center lg:text-left">
+            <div class="text-left max-w-xl px-4 sm:px-6 space-y-8 sm:space-y-20 text-center lg:text-left">
                 <h2 class="text-start sm:text-start md:text-start text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
                     Finally, your<br/>
                     passion for<br/>
                     music pays.
                 </h2>
-                <p class="text-base text-start text-2xl sm:text-lg md:text-xl leading-relaxed pt-0 sm:pt-10">
+                <p class="text-md sm:text-lg text-base text-start text-2xl leading-relaxed sm:text-xl md:text-xl lg:text-2xl">
                     YUME makes a true music listener's<br class="hidden sm:block"/> dream come true: to be able to<br
                         class="hidden sm:block"/>
                     discover and support artists; and be<br class="hidden sm:block"/> rewarded for doing so.
                 </p>
-            </div>
 
-            <!-- Right Feature Cards -->
-            <!-- Background Card with Dark Overlay -->
+            </div>
             <div
                 class="bg-black/60 backdrop-blur-sm border border-gray-300 rounded-xl p-4 sm:p-6 shadow-lg w-full max-w-sm mx-auto">
                 <div class="flex flex-col items-center space-y-8 text-center px-4 sm:px-5 py-4">
-                    <!-- Freemium -->
+
                     <div class="space-y-2 flex flex-col items-center">
                         <img src="{{ asset('img/ic-headphone-1.png') }}" alt="Headphone Icon"
                              class="w-12 sm:w-16 h-auto"/>
@@ -304,7 +344,6 @@
                         </p>
                     </div>
 
-                    <!-- Premium -->
                     <div class="space-y-2 flex flex-col items-center">
                         <img src="{{ asset('img/ic-headphone.png') }}" alt="Headphone Icon"
                              class="w-16 sm:w-20 h-auto"/>
@@ -320,7 +359,6 @@
         </div>
     </div>
 </section>
-
 
 <section class="bg-[#131c26] text-white py-20 px-4">
     <div class="max-w-7xl mx-auto border-2 border-[#f15a29] rounded-3xl p-10 text-center space-y-10">
