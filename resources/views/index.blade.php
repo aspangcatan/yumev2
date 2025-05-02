@@ -42,7 +42,7 @@
     class="relative min-h-[calc(74vh-100px)] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
 
     <!-- Decorative Dots Background -->
-    <img src="{{ asset('img/img-bg-dots-1.png') }}"
+    <img src="{{ asset('img/img-bg-dots-1.png') }}?v={{ filemtime(public_path('img/img-bg-dots-1.png')) }}">
          class="absolute top-0 left-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
          alt="Background Dots">
 
@@ -110,7 +110,7 @@
 
         <!-- Image -->
         <div class="absolute right-0 bottom-0 hidden md:block h-full w-auto max-h-screen translate-x-[-45%]">
-            <img src="{{ asset('img/img-home-1.png') }}"
+            <img src="{{ asset('img/img-home-1.png') }}?v={{ filemtime(public_path('img/img-home-1.png')) }}">
                  alt="Listener Girl"
                  class="relative z-10 h-full w-auto object-contain scale-110">
         </div>
@@ -124,7 +124,9 @@
     <div class="absolute inset-0 flex w-full h-full flex-col md:flex-row">
         <!-- Left Image (hidden on mobile) -->
         <div class="hidden md:block w-full md:w-1/2 h-full bg-cover bg-center"
-             style="background-image: url('{{ asset('img/img-home-2.jpg') }}');"></div>
+             style="background-image: url('{{ asset('img/img-home-2.jpg') }}?v={{ filemtime(public_path('img/img-home-2.jpg')) }}');">
+        </div>
+
 
         <!-- Right Background Color (takes full width on mobile) -->
         <div class="w-full md:w-1/2 h-full bg-[#0A0603]"></div>
@@ -184,7 +186,7 @@
 
 
 <section
-    class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}')] bg-no-repeat bg-cover pb-0 md:pb-24">
+    class="w-full bg-[#F15A29] bg-[url('{{ asset('img/img-bg-dots-1.png') }}?v={{ filemtime(public_path('img/img-bg-dots-1.png')) }}')] bg-no-repeat bg-cover pb-0 md:pb-24">
     <div class="mx-auto px-7 sm:px-20">
         <div class="overflow-hidden">
             <!-- Mobile: Horizontal Scroll with 2 images visible at a time -->
@@ -308,7 +310,8 @@
 <section
     class="relative pt-8 text-white px-4 sm:px-8 overflow-hidden bg-no-repeat bg-cover
            bg-gradient-to-r from-[#6B7064] to-[#867B6C]
-           sm:bg-[url('{{ asset('img/img-home-4.png') }}')]">
+           sm:bg-[url('{{ asset('img/img-home-4.png') }}?v={{ filemtime(public_path('img/img-home-4.png')) }}')]">
+
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/15 z-10 pointer-events-none"></div>
 
