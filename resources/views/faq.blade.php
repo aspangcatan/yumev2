@@ -784,7 +784,7 @@
         </div>
     </div>
 </section>
-
+@include('layouts.footer')
 <!-- Small Script for Mobile Menu -->
 <script>
     const toggleBtn = document.getElementById('menu-toggle');
