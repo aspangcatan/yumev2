@@ -1,0 +1,9 @@
+.bg-mobile {
+    background-image: url('/img/newbg1.png');
+  }
+  
+  @media (min-width: 768px) {
+    .bg-desktop {
+      background-image: url('/img/19.png');
+    }
+  }
