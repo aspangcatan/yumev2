@@ -48,7 +48,7 @@
       <img
         src="{{ asset('img/13.png') }}"
         alt="Background Image"
-        class="absolute inset-0 w-full h-[500px] sm:h-[500px] object-cover"
+        class="absolute inset-0 w-full h-full object-cover"
       >
     </picture>
     <!-- Overlay -->
