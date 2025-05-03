@@ -117,13 +117,9 @@
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-3">
         The Role of YUME
       </h3>
-<<<<<<< HEAD
-      <p class="text-sm text-white leading-relaxed">
-        YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement.
-=======
+
       <p class="text-sm md:text-lg text-white pl-5 md:pl-10 leading-relaxed">
         YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement.
->>>>>>> b388f45e915ba79026a9a319870e8fd9bf0dc2b0
         We provide cutting-edge tools for digital promotion, showcasing talent and electrifying live performances on the global stage.
       </p>
     </div>
