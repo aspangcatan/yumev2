@@ -214,9 +214,9 @@
 
 
                 <div class="flex justify-center sm:justify-end w-full mt-2">
-                    <div class="flex justify-center sm:justify-end w-full">
+                    <div class="flex justify-center sm:justify-end w-full pb-8">
                         <a href="{{ route('artist') }}"
-                           class="inline-block bg-[#121212] text-white font-bold py-4 px-16 rounded-full text-lg hover:opacity-90 transition text-center">
+                           class="inline-block bg-[#121212] text-white font-bold py-4 px-16 rounded-full text-lg hover:opacity-90 transition text-center whitespace-nowrap">
                             GET PUBLISHED FOR FREE
                         </a>
                     </div>
