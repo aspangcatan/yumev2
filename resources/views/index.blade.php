@@ -213,14 +213,15 @@
                 </div>
 
 
-                <div class="flex justify-center sm:justify-end w-full mt-2">
-                    <div class="flex justify-center sm:justify-end w-full pb-8">
+                <div class="flex justify-center sm:justify-end w-full mt-2 mb-8">
+                    <div class="flex justify-center sm:justify-end w-full">
                         <a href="{{ route('artist') }}"
-                           class="inline-block bg-[#121212] text-white font-bold py-4 px-16 rounded-full text-lg hover:opacity-90 transition text-center whitespace-nowrap">
+                           class="inline-block bg-[#121212] text-white font-bold py-4 px-8 sm:px-16 rounded-full text-base sm:text-lg hover:opacity-90 transition text-center whitespace-nowrap">
                             GET PUBLISHED FOR FREE
                         </a>
                     </div>
                 </div>
+
             </div>
             <div class="relative w-full hidden md:grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
                 <!-- Left Side Image Column -->
