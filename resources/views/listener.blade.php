@@ -42,7 +42,7 @@
   <img 
     src="{{ asset('img/18.png') }}" 
     alt="Background Image" 
-    class="absolute inset-0 w-full h-[300px] sm:h-[500px] object-cover"
+    class="absolute inset-0 w-full h-[500px] object-cover"
   >
 
   <!-- Overlay -->
@@ -77,7 +77,8 @@
         Download The App<br />
         Subscribe & Earn.
       </h1>
-      <h2 class="text-2xl text-orange-500 font-semibold mb-6">
+      <h2 class="text-3xl text-orange-500 font-bold mb-6">
+        <br>
         Love music?<br />
         Monetize it with Yume.
       </h2>
@@ -85,7 +86,7 @@
       <div class="space-y-6 text-white text-lg">
         <div>
           <h3 class="font-bold">Unlock Financial Freedom</h3>
-          <ul class="list-disc list-inside text-sm">
+          <ul class="list-disc list-inside text-sm md:text-lg">
             <li>Stream songs, earn income, discover new artists</li>
             <li>Share and amplify your earnings</li>
             <li>Break free from traditional music consumption</li>
@@ -93,7 +94,7 @@
         </div>
         <div>
           <h3 class="font-bold">Discover Limitless Earning Possibilities</h3>
-          <ul class="list-disc list-inside text-sm">
+          <ul class="list-disc list-inside text-sm md:text-lg">
             <li>Download the App and create a Yume account</li>
           </ul>
         </div>
@@ -261,8 +262,8 @@
         <div class="flex-1 space-y-10 ml-0 md:ml-20">
             <!-- Get Started Now -->
             <div>
-                <h2 class="text-lg font-semibold mb-3 text-gray-800">Get Started Now!</h2>
-                <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
+                <h2 class="text-xl md:text-3xl font-semibold mb-3 text-gray-800">Get Started Now!</h2>
+                <ul class="list-disc list-outside text-sm md:text-lg text-gray-800 space-y-1 ml-5">
                     <li>Download the free app</li>
                     <li>Create a free YUME account</li>
                     <li>Explore our music catalog</li>
@@ -273,8 +274,8 @@
 
             <!-- Discover Limitless Earning Possibilities -->
             <div>
-                <h2 class="text-gl font-semibold mb-3 text-gray-800">Discover Limitless Earning Possibilities</h2>
-                <ul class="list-disc list-inside text-sm text-gray-800 space-y-1 ml-5">
+                <h2 class="text-xl md:text-3xl font-semibold mb-3 text-gray-800">Discover Limitless Earning Possibilities</h2>
+                <ul class="list-disc list-outside text-sm md:text-lg text-gray-800 space-y-1 ml-5">
                     <li>Upgrade to a paid subscription account</li>
                     <li>Stream music and start earning income</li>
                     <li>Share and get paid even more</li>
@@ -292,13 +293,12 @@
 
         <!-- Right Side: Main Title -->
         <div class="flex-2">
-            <h3 class="text-2xl md:text-5xl font-extrabold leading-tight text-black">
-                Subscribe. Stream. Share.
-                <br>
-                Get Paid. Simple.
-            </h3>
+          <h3 class="text-2xl md:text-4xl md:text-5xl font-extrabold leading-tight text-black">
+            <span class="whitespace-nowrap">Subscribe. Stream. Share.</span><br>
+            Get Paid. Simple.
+          </h3>
         </div>
-    </div>
+        </div>
 </section>
 
 @include('layouts.footer')
