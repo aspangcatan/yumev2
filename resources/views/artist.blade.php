@@ -40,17 +40,23 @@
 <section class="relative min-h-[66vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
     <!-- Background Image (Mirrored) -->
 
-    <img
-      src="{{ asset('img/13.png') }}"
-      alt="Background Image"
-      class="absolute inset-0 w-full h-[300px] sm:h-[500px] object-cover"
-
+    <picture >
+      <!-- Mobile image -->
+      <source media="(max-width: 639px)" srcset="{{ asset('img/13updated.png') }}">
+      
+      <!-- Default image (desktop and up) -->
+      <img
+        src="{{ asset('img/13.png') }}"
+        alt="Background Image"
+        class="absolute inset-0 w-full h-[500px] sm:h-[500px] object-cover"
+      >
+    </picture>
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-10"></div>
 
     <!-- Content on top -->
     <div class="relative z-10 max-w-2xl">
-        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8">
+        <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-8">
             MAKE MUSIC.<br>
             GET <span class="text-yume-orange">DISCOVERED</span>.<br>
             GET PAID.
@@ -91,12 +97,12 @@
 
 
 <section
-  class="bg-[url('{{ asset('img/14.png') }}')] bg-cover bg-center bg-[#3f2e33] py-15 px-6 md:px-20"
+  class="bg-[url('{{ asset('img/14.png') }}')] bg-cover bg-center bg-[#3f2e33] py-15 px-6 md:px-20 "
 >
 <br>
 <br>
     <!-- Key Components -->
-    <div>
+    <div class="max-w-5xl mx-auto text-left space-y-10">
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-3">
         Key Components
       </h3>
@@ -113,7 +119,7 @@
     <!-- The Role of YUME -->
     <br>
     <br>
-    <div>
+    <div class="max-w-5xl mx-auto text-left space-y-10">
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-3">
         The Role of YUME
       </h3>
@@ -127,7 +133,7 @@
     <!-- Key Benefits Include -->
     <br>
     <br>
-    <div>
+    <div class="max-w-5xl mx-auto text-left space-y-10">
       <h3 class="text-2xl md:text-3xl font-extrabold text-yume-orange mb-3">
         Key Benefits Include
       </h3>
@@ -219,7 +225,7 @@
 
 <section class="relative bg-white bg-cover bg-center bg-no-repeat min-h-[120vh] flex text-center px-4 pb-4 sm:px-0 sm:pb-0" style="background-image: url('{{ asset('img/17.png') }}');">
 
-  <div class="max-w-xl w-fit h-fit ml-0 sm:ml-20 mt-8 mb-8 p-8 border-2 border-black bg-white/10 backdrop-blur-md shadow-xl rounded-lg">
+  <div class="max-w-xl w-fit h-fit ml-0 sm:ml-48 mt-8 mb-8 p-8 border-2 border-black bg-white/10 backdrop-blur-md shadow-xl rounded-lg">
     <h1 class="text-2xl font-extrabold text-orange-600 uppercase">Artist Submission Form</h1>
     <h2 class="text-lg font-bold mt-1 mb-4 text-gray-800">Embark on a Musical Odyssey!</h2>
     <p class="text-gray-800 mb-2 text-sm md:text-lg">

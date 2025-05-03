@@ -39,11 +39,17 @@
 
 <section class="relative min-h-[66vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
   <!-- Background Image -->
-  <img 
-    src="{{ asset('img/18.png') }}" 
-    alt="Background Image" 
-    class="absolute inset-0 w-full h-[500px] object-cover"
-  >
+  <picture >
+    <!-- Mobile image -->
+    <source media="(max-width: 639px)" srcset="{{ asset('img/18.png') }}">
+    
+    <!-- Default image (desktop and up) -->
+    <img 
+      src="{{ asset('img/18.png') }}" 
+      alt="Background Image" 
+      class="absolute inset-0 w-full h-[500px] sm:h-[500px] object-cover"
+    >
+  </picture>
 
   <!-- Overlay -->
   <div class="absolute inset-0 bg-black bg-opacity-10"></div>
@@ -53,12 +59,12 @@
     <div class="text-left">
       <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
         <span class="block">ANYONE CAN</span>
-        <span class="block">TURN <span class="text-orange-600">BEATS</span></span>
-        <span class="block">INTO BUCKS</span>
+        <span class="block">TURN <span class="text-orange-600">BEATS</span> INTO</span>
+        <span class="block">BUCKS</span>
       </h1>
       <a 
         href="#"
-        class="mt-6 inline-block bg-orange-600 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition"
+        class="mt-6 inline-block bg-orange-600 hover:bg-orange-700 text-white text-xl font-bold py-4 px-8 rounded-full transition"
       >
         DOWNLOAD THE APP NOW
       </a>
@@ -73,11 +79,11 @@
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
     <!-- Left Content -->
     <div class="max-w-xl">
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
         Download The App<br />
         Subscribe & Earn.
       </h1>
-      <h2 class="text-3xl text-orange-500 font-bold mb-6">
+      <h2 class="text-4xl text-orange-500 font-bold mb-6">
         <br>
         Love music?<br />
         Monetize it with Yume.
@@ -86,7 +92,7 @@
       <div class="space-y-6 text-white text-lg">
         <div>
           <h3 class="font-bold">Unlock Financial Freedom</h3>
-          <ul class="list-disc list-inside text-sm md:text-lg">
+          <ul class="list-disc list-inside text-sm md:text-lg ml-0 md:ml-10">
             <li>Stream songs, earn income, discover new artists</li>
             <li>Share and amplify your earnings</li>
             <li>Break free from traditional music consumption</li>
@@ -94,13 +100,16 @@
         </div>
         <div>
           <h3 class="font-bold">Discover Limitless Earning Possibilities</h3>
-          <ul class="list-disc list-inside text-sm md:text-lg">
+          <ul class="list-disc list-inside text-sm md:text-lg ml-0 md:ml-10">
             <li>Download the App and create a Yume account</li>
           </ul>
         </div>
       </div>
 
-      <a href="#" class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition">
+      <a 
+        href="#" 
+        class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-4 px-10 rounded-full transition"
+      >
         LEARN MORE
       </a>
     </div>
