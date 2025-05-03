@@ -36,26 +36,33 @@
 
 <body class="bg-black text-white">
 <!-- Hero Section -->
-<section class="h-[70vh] bg-gradient-to-b from-black to-yume-orange bg-dots-pattern bg-center bg-repeat text-white">
+<section
+    class="relative min-h-[calc(74vh-100px)] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
+
+    <!-- Decorative Dots Background -->
     <img src="{{ asset('img/img-bg-dots-1.png') }}"
          class="absolute top-0 left-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
          alt="Background Dots">
+
     @include('layouts.header', ['active' => 'faq'])
-    <div class="flex flex-col justify-center items-center text-center mt-20 px-10">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">FEQUENTLY ASKED QUESTIONS</h1>
-        <p class="text-lg md:text-xl max-w-2xl mb-10">
+
+    <div
+        class="flex flex-col justify-center items-center text-center min-h-[calc(74vh-100px)] px-6 sm:px-10 relative z-10">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+            FEQUENTLY ASKED QUESTIONS
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl max-w-2xl mb-8">
             Find answers to the most common questions below.
         </p>
 
-        <div class="mt-8" style="display: none">
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto mb-5" style="display: none">
             <a href="#"
-               class="inline-block bg-white text-yume-orange font-bold py-3 px-8 rounded-full transition hover:bg-gray-100">
+               class="bg-white text-orange-600 font-semibold py-3 px-6 sm:px-8 rounded-full shadow-lg text-center hover:bg-gray-100 transition w-full sm:w-auto">
                 CONTACT US
             </a>
         </div>
     </div>
 </section>
-
 <section class="bg-gray-100 py-16">
     <div class="container mx-auto px-6">
         <div class="space-y-6 max-w-4xl mx-auto">
@@ -272,7 +279,7 @@
                     <p class="text-gray-700 leading-relaxed text-base md:text-lg">
                         YUME can do a relaunch of your prior released songs or create a special "collection" of songs
                         that makes it a "new" release. For example, a song can be re-titled as "I Love You Song (YUME
-                        version).\” There is no need to take them down.
+                        version).” There is no need to take them down.
                     </p>
                 </div>
             </div>

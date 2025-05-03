@@ -39,9 +39,9 @@
 
 <section class="relative min-h-[66vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
     <!-- Background Image (Mirrored) -->
-    <img 
-      src="{{ asset('img/13.png') }}" 
-      alt="Background Image" 
+    <img
+      src="{{ asset('img/13.png') }}"
+      alt="Background Image"
       class="absolute inset-0 w-full h-[300px] sm:h-[500px] object-cover"
     >
 
@@ -55,8 +55,8 @@
             GET <span class="text-yume-orange">DISCOVERED</span>.<br>
             GET PAID.
         </h1>
-        <a 
-          href="#join" 
+        <a
+          href="#join"
           class="inline-block bg-white text-yume-orange hover:bg-gray-200 font-bold py-4 px-12 rounded-full transition mb-2.5 md:mb-0"
         >
           JOIN AS ARTIST
@@ -90,7 +90,7 @@
 </section>
 
 
-<section 
+<section
   class="bg-[url('{{ asset('img/14.png') }}')] bg-cover bg-center bg-[#3f2e33] py-15 px-6 md:px-20"
 >
 <br>
@@ -116,7 +116,7 @@
         The Role of YUME
       </h3>
       <p class="text-sm text-white leading-relaxed">
-        YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement. 
+        YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement.
         We provide cutting-edge tools for digital promotion, showcasing talent and electrifying live performances on the global stage.
       </p>
     </div>
@@ -138,7 +138,7 @@
     <br>
 </section>
 
-<section 
+<section
   class="relative text-white bg-no-repeat bg-cover bg-center px-4 py-10"
   style="background-image: url('{{ asset('img/15.png') }}');"
 >

@@ -41,9 +41,8 @@
 <section
     class="relative min-h-[calc(74vh-100px)] bg-gradient-to-b from-black to-yume-orange bg-center bg-repeat text-white overflow-hidden">
 
-    <!-- Decorative Dots Background -->
     <img src="{{ asset('img/img-bg-dots-1.png') }}"
-         class="absolute top-0 left-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
+         class="absolute top-0 left-0 w-full h-full object-cover opacity-30 pointer-events-none z-0 exclude-transition"
          alt="Background Dots">
 
     @include('layouts.header', ['active' => 'home'])
@@ -79,7 +78,7 @@
 
                 <div class="text-3xl sm:text-4xl pt-2">Now you can turn that passion into rewards.</div>
             </h2>
-            <p class="text-md sm:text-lg text-black-700 mb-8 leading-relaxed my-10 text-left">
+            <p class="text-lg sm:text-xl text-black-700 mb-8 leading-relaxed my-10 text-left">
                 YUME is more than just a music platform — it's a movement where passionate listeners<span
                     class="hidden sm:inline"><br/></span>
                 and independent artists come together. Stream exclusive tracks, uncover future stars,<span
@@ -110,9 +109,8 @@
 
         <!-- Image -->
         <div class="absolute right-0 bottom-0 hidden md:block h-full w-auto max-h-screen translate-x-[-45%]">
-            <img src="{{ asset('img/img-home-1.png') }}"
-                 alt="Listener Girl"
-                 class="relative z-10 h-full w-auto object-contain scale-110">
+            <img src="{{ asset('img/img-home-1.png') }}" loading="lazy" alt="Listener Girl"
+                 class="relative z-10 h-full w-auto object-contain scale-110 opacity-0 transition-opacity duration-1000">
         </div>
     </div>
 </section>
@@ -132,7 +130,7 @@
 
     <!-- Centered Content -->
     <!-- Centered Content -->
-    <div class="relative z-10 w-full px-6 py-12 flex flex-col justify-end h-full">
+    <div class="relative z-10 w-full px-6 pt-12 pb-10 flex flex-col justify-end h-full">
         <!-- Content Width Container -->
         <div class="w-full md:max-w-none md:px-16">
 
@@ -149,7 +147,7 @@
                 </span>
                 </h2>
 
-                <p class="text-base sm:text-md md:text-lg mb-8 mt-10 text-start md:text-end">
+                <p class="text-base text-lg sm:text-xl mb-8 mt-10 text-start md:text-end">
                     YUME empowers aspiring artists by providing a global platform where their music can be<span
                         class="hidden sm:inline"><br/></span>
                     heard, loved, and rewarded. Whether you’re an emerging indie star or an undiscovered<span
@@ -215,63 +213,67 @@
                 </div>
 
 
-                <div class="flex justify-center">
-                    <a href="{{ route('artist') }}"
-                       class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition max-w-3xl w-full text-center">
-                        GET PUBLISHED FOR FREE
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="relative w-full hidden md:grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
-            <!-- Left Side Image Column -->
-            <div class="relative flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full h-full">
-                <!-- First image with top margin -->
-                <img src="{{ asset('img/yume-artist-4.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 md:w-64 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-8 sm:mt-40"
-                     alt="Artist 1">
-
-                <!-- Middle image, aligned at the top -->
-                <img src="{{ asset('img/yume-artist-2.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover z-10 sm:relative sm:bottom-0"
-                     alt="Artist 2">
-
-                <!-- Third image with top margin -->
-                <img src="{{ asset('img/yume-artist-3.png') }}"
-                     class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-8 sm:mt-40"
-                     alt="Artist 3">
-            </div>
-
-            <!-- Right Side Content -->
-            <div class="text-white text-center md:text-left space-y-6 w-full h-full flex flex-col">
-                <!-- Top Banner -->
-                <img src="{{ asset('img/yume-artist-5.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover mt-20" style="object-position: center 10%;"
-                     alt="Top Banner">
-
-                <!-- Text Content -->
-                <div class="flex flex-col justify-center items-center text-center">
-                    <h2 class="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">YUME Artists</h2>
-
-                    <p class="text-md sm:text-lg md:text-xl mt-4 mt-5 max-w-3xl text-start sm:text-end">
-                        Meet the rising stars shaping the future of music. YUME’s<br/>
-                        global community is discovering tomorrow’s chart-toppers<br/>
-                        today. Join our roster of talented artists and take the first step<br/>
-                        toward living your dream.
-                    </p>
-
-
-                    <div class="flex justify-center mt-5">
+                <div class="flex justify-center sm:justify-end w-full mt-2">
+                    <div class="flex justify-center sm:justify-end w-full">
                         <a href="{{ route('artist') }}"
-                           class="inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition max-w-3xl w-full text-center">
+                           class="inline-block bg-[#121212] text-white font-bold py-4 px-16 rounded-full text-lg hover:opacity-90 transition text-center">
                             GET PUBLISHED FOR FREE
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="relative w-full hidden md:grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+                <!-- Left Side Image Column -->
+                <div class="relative flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full h-full">
+                    <!-- First image with top margin -->
+                    <img src="{{ asset('img/yume-artist-4.png') }}"
+                         class="w-full max-w-[210px] sm:w-48 md:w-64 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-8 sm:mt-40"
+                         alt="Artist 1">
 
-                <!-- Bottom Banner -->
-                <img src="{{ asset('img/yume-artist-1.png') }}"
-                     class="w-full h-24 sm:h-32 object-cover" style="object-position: center 10%;" alt="Top Banner">
+                    <!-- Middle image, aligned at the top -->
+                    <img src="{{ asset('img/yume-artist-2.png') }}"
+                         class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover z-10 sm:relative sm:bottom-0"
+                         alt="Artist 2">
+
+                    <!-- Third image with top margin -->
+                    <img src="{{ asset('img/yume-artist-3.png') }}"
+                         class="w-full max-w-[210px] sm:w-48 h-full object-contain sm:object-cover sm:relative sm:bottom-0 mt-8 sm:mt-40"
+                         alt="Artist 3">
+                </div>
+
+                <!-- Right Side Content -->
+                <div class="text-white text-center md:text-left space-y-6 w-full h-full flex flex-col">
+                    <!-- Top Banner -->
+                    <div class="w-full h-24 sm:h-32 bg-[#6E499D] flex items-center justify-center mt-20">
+                        <img src="{{ asset('img/yume-artist-5.png') }}"
+                             class="w-full h-24 sm:h-32 object-cover" style="object-position: center 10%;"
+                             alt="Top Banner">
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <div class="w-full max-w-3xl flex flex-col items-center sm:items-end">
+                            <h2 class="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-center sm:text-right">
+                                YUME Artists
+                            </h2>
+
+                            <p class="text-md sm:text-lg md:text-xl text-start sm:text-end mt-4">
+                                Meet the rising stars shaping the future of music. YUME’s<br/>
+                                global community is discovering tomorrow’s chart-toppers<br/>
+                                today. Join our roster of talented artists and take the first step<br/>
+                                toward living your dream.
+                            </p>
+
+                            <a href="{{ route('artist') }}"
+                               class="mt-5 inline-block px-6 sm:px-8 py-4 sm:py-6 bg-[#121212] text-white text-sm sm:text-lg md:text-xl font-semibold rounded-full hover:opacity-90 transition text-center w-full sm:w-auto">
+                                GET PUBLISHED FOR FREE
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bottom Banner -->
+                    <img src="{{ asset('img/yume-artist-1.png') }}"
+                         class="w-full h-24 sm:h-32 object-cover" style="object-position: center 10%;" alt="Top Banner">
+                </div>
             </div>
         </div>
     </div>
@@ -414,18 +416,16 @@
         </div>
 
         <!-- CTA Button -->
-        <div>
+        <div class="flex justify-center">
             <a href="{{ route('listener') }}"
-               class="bg-[#f15a29] text-white font-bold text-lg sm:text-base md:text-lg px-8 sm:px-6 py-4 rounded-full hover:bg-[#d84e23] transition whitespace-nowrap">
+               class="bg-[#f15a29] text-white font-bold sm:text-lg md:text-xl px-16 py-6 rounded-full hover:bg-[#d84e23] transition whitespace-nowrap">
                 CREATE AN ACCOUNT
             </a>
         </div>
-
-
     </div>
 </section>
 
-<section class="relative bg-white text-black py-20 px-6 overflow-hidden">
+<section class="relative bg-white text-black pt-20 pb-10 px-6 overflow-hidden">
     <!-- Absolute Background Image -->
     <img src="{{ asset('img/img-bg-dots.png') }}"
          alt="Background"
@@ -481,35 +481,35 @@
         </div>
 
         <!-- News Section -->
-        <div class="container mx-auto px-6 md:px-12 lg:px-20">
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between">
-                <!-- Title -->
-                <div class="text-center md:text-left pb-10 md:pb-0 flex-shrink-0">
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-yume-orange whitespace-nowrap">
-                        In The NEWS
-                    </h2>
+        <div class="container mx-auto px-6 md:px-12 lg:px-20 pt-10 pb-0 md:pb-10">
+            <!-- Title Centered -->
+            <div class="text-center pb-12">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-yume-orange">
+                    In The NEWS
+                </h2>
+            </div>
+
+            <!-- News Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <a href="https://www.wicz.com/story/50475038/yume-unveils-game-changing-streaming-and-music-publishing-platform"
+                       target="_blank">
+                        <img src="{{ asset('img/img-news-1.png') }}" alt="YUME News 1" class="w-full">
+                    </a>
                 </div>
 
-                <!-- Images Grid (side by side on md+, stacked on mobile) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 flex-1">
-                    <!-- News Image 1 -->
-                    <div class="flex justify-center">
-                        <img src="{{ asset('img/img-news-1.png') }}"
-                             alt="YUME News"
-                             class="w-full max-w-xs rounded-lg shadow-lg cursor-pointer hover:opacity-80 transition"
-                             onclick="window.open('https://www.wicz.com/story/50475038/yume-unveils-game-changing-streaming-and-music-publishing-platform','_blank')">
-                    </div>
-
-                    <!-- News Image 2 -->
-                    <div class="flex justify-center md:pt-0 pt-10">
-                        <img src="{{ asset('img/img-news-2.png') }}"
-                             alt="YUME News"
-                             class="w-full max-w-xs rounded-lg shadow-lg cursor-pointer hover:opacity-80 transition"
-                             onclick="window.open('https://philippines-startup.biz/%e3%83%97%e3%83%ac%e3%82%b9%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9/?t=yume-sets-the-stage-for-a-more-rewarding-music-experience-for-filipino-music-listeners&amp;rid=1547','_blank')">
-                    </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <a href="https://philippines-startup.biz/%e3%83%97%e3%83%ac%e3%82%b9%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9/?t=yume-sets-the-stage-for-a-more-rewarding-music-experience-for-filipino-music-listeners&amp;rid=1547"
+                       target="_blank">
+                        <img src="{{ asset('img/img-news-2.png') }}" alt="YUME News 2" class="w-full">
+                    </a>
                 </div>
             </div>
         </div>
+
+
     </div>
 </section>
 <section id="feature-sections" class="bg-white py-5">
@@ -666,6 +666,33 @@
 
     window.addEventListener('resize', updateVisuals); // Recalculate on resize
     updateVisuals();
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('img');
+
+        images.forEach(img => {
+            // Skip only the one with class 'exclude-transition'
+            if (!img.classList.contains('exclude-transition')) {
+                img.style.opacity = 0;
+                img.style.transition = "opacity 1s ease-in-out";
+            }
+        });
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('exclude-transition')) {
+                    entry.target.style.opacity = 1;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        images.forEach(img => {
+            if (!img.classList.contains('exclude-transition')) {
+                observer.observe(img);
+            }
+        });
+    });
 
 </script>
 </body>
