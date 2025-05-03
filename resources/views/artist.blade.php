@@ -124,7 +124,7 @@
         The Role of YUME
       </h3>
 
-      <p class="text-sm md:text-lg text-white pl-5 md:pl-10 leading-relaxed">
+      <p class="text-sm md:text-lg text-white leading-relaxed">
         YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement.
         We provide cutting-edge tools for digital promotion, showcasing talent and electrifying live performances on the global stage.
       </p>

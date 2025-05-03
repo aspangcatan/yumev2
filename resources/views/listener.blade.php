@@ -301,8 +301,8 @@
         </div>
 
         <!-- Right Side: Main Title -->
-        <div class="flex-2">
-          <h3 class="text-2xl md:text-4xl md:text-5xl font-extrabold leading-tight text-black">
+        <div>
+          <h3 class="text-xl md:text-4xl md:text-5xl font-extrabold leading-tight text-black">
             <span class="whitespace-nowrap">Subscribe. Stream. Share.</span><br>
             Get Paid. Simple.
           </h3>
