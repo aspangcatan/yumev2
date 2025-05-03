@@ -39,18 +39,11 @@
 
 <section class="relative min-h-[66vh] flex items-center justify-start px-8 bg-black text-white overflow-hidden">
     <!-- Background Image (Mirrored) -->
-<<<<<<< HEAD
+
     <img
       src="{{ asset('img/13.png') }}"
       alt="Background Image"
       class="absolute inset-0 w-full h-[300px] sm:h-[500px] object-cover"
-=======
-    <img 
-      src="{{ asset('img/13.png') }}" 
-      alt="Background Image" 
-      class="absolute inset-0 w-full h-[500px] object-cover"
->>>>>>> b388f45e915ba79026a9a319870e8fd9bf0dc2b0
-    >
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-10"></div>
@@ -129,7 +122,7 @@
         YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement.
 =======
       <p class="text-sm md:text-lg text-white pl-5 md:pl-10 leading-relaxed">
-        YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement. 
+        YUME empowers artists with a comprehensive platform to share their music worldwide ensuring listener support and encouragement.
 >>>>>>> b388f45e915ba79026a9a319870e8fd9bf0dc2b0
         We provide cutting-edge tools for digital promotion, showcasing talent and electrifying live performances on the global stage.
       </p>
