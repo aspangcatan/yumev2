@@ -37,3 +37,9 @@ Route::get('/signin', function () {
     return view('signin');
 })->name('signin');
 
+
+// Catch-all redirect route for referral
+Route::get('/{username}', function ($username) {
+    return redirect()->away("https://backoffice.yume.global/{$username}");
+})->where('username', '^(?!faq$|artist$|listener$|reward$|signin$).+');
+
