@@ -98,7 +98,7 @@
                     </li>
                 </ul>
                 <div class="flex justify-center sm:justify-start">
-                    <a href="#"
+                    <a href="https://backoffice.yume.global/signup_process.php"
                        class="bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-16 rounded-full text-lg transition">
                         LEARN MORE
                     </a>
@@ -168,7 +168,7 @@
                     </ul>
 
                     <!-- CTA Button -->
-                    <a href="#"
+                    <a href="https://backoffice.yume.global/signup_process.php"
                        class="bg-white text-yume-orange font-bold py-4 px-16 md:px-20 rounded-full transition hover:bg-gray-100 text-xl whitespace-nowrap mt-3 sm:mt-0">
                         LEARN MORE
                     </a>
@@ -418,7 +418,7 @@
 
         <!-- CTA Button -->
         <div class="flex justify-center">
-            <a href="{{ route('listener') }}"
+            <a href="https://backoffice.yume.global/signup_process.php"
                class="bg-[#f15a29] text-white font-bold sm:text-lg md:text-xl px-16 py-6 rounded-full hover:bg-[#d84e23] transition whitespace-nowrap">
                 CREATE AN ACCOUNT
             </a>

@@ -17,7 +17,7 @@
     <nav class="hidden md:flex items-center space-x-8 absolute right-6">
         <a href="{{ route('reward') }}" class="{{ ($active ?? '') === 'reward' ? 'text-orange-500' : '' }}">Rewards</a>
         <a href="{{ route('faq') }}" class="{{ ($active ?? '') === 'faq' ? 'text-orange-500' : '' }}">FAQ</a>
-        <a href="{{ route('signin') }}" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full transition">Sign In</a>
+        <a href="https://backoffice.yume.global" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full transition">Sign In</a>
     </nav>
 
     <!-- Mobile Menu Button -->
@@ -37,5 +37,5 @@
     <a href="{{ route('listener') }}" class="block {{ ($active ?? '') === 'listener' ? 'text-orange-500' : 'text-white' }}">Listeners</a>
     <a href="{{ route('reward') }}" class="block {{ ($active ?? '') === 'reward' ? 'text-orange-500' : 'text-white' }}">Rewards</a>
     <a href="{{ route('faq') }}" class="block {{ ($active ?? '') === 'faq' ? 'text-orange-500' : 'text-white' }}">FAQ</a>
-    <a href="{{ route('signin') }}" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full">Sign In</a>
+    <a href="https://backoffice.yume.global" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-full">Sign In</a>
 </div>

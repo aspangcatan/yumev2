@@ -90,7 +90,7 @@
         It extends beyond printing sheet music to include licensing, royalty collection, and intellectual property protection.
     </p>
 
-    <a href="#learn-more" class="inline-block bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-full transition" style="margin-bottom:10px;">
+    <a href="https://backoffice.yume.global/signup_process.php" class="inline-block bg-yume-orange hover:bg-orange-600 text-white font-bold py-4 px-12 rounded-full transition" style="margin-bottom:10px;">
         LEARN MORE
     </a>
 </section>

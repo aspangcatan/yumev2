@@ -107,7 +107,7 @@
       </div>
 
       <a 
-        href="#" 
+        href="https://backoffice.yume.global/signup_process.php" 
         class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-4 px-10 rounded-full transition"
       >
         LEARN MORE
@@ -164,7 +164,9 @@
           <li>Discover New Artists</li>
           <li>Accumulate Streaming Points</li>
         </ul>
-        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
+        <a href="https://backoffice.yume.global/signup_process.php" class="mt-6 w-full block text-center bg-white text-orange-600 font-bold py-2 rounded-full">
+            LEARN MORE
+        </a>
       </div>
     </div>
 
@@ -186,7 +188,9 @@
           <li>Direct Referral Bonus</li>
           <li>Eligible for Concert Ticket Promos</li>
         </ul>
-        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
+        <a href="https://backoffice.yume.global/signup_process.php" class="mt-6 w-full block text-center bg-white text-orange-600 font-bold py-2 rounded-full">
+            LEARN MORE
+        </a>
       </div>
     </div>
 
@@ -207,7 +211,9 @@
           <li>Direct Referral Bonus</li>
           <li>Eligible for Concert Ticket Promos</li>
         </ul>
-        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
+        <a href="https://backoffice.yume.global/signup_process.php" class="mt-6 w-full block text-center bg-white text-orange-600 font-bold py-2 rounded-full">
+            LEARN MORE
+        </a>
       </div>
     </div>
 
@@ -228,7 +234,9 @@
           <li>Direct Referral Bonus</li>
           <li>Eligible for Concert Ticket Promos</li>
         </ul>
-        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
+        <a href="https://backoffice.yume.global/signup_process.php" class="mt-6 w-full block text-center bg-white text-orange-600 font-bold py-2 rounded-full">
+            LEARN MORE
+        </a>
       </div>
     </div>
 
@@ -255,7 +263,9 @@
           <li>Discount on Product Purchases</li>
           <li>Access to Rewards Program</li>
         </ul>
-        <button class="mt-6 w-full bg-white text-orange-600 font-bold py-2 rounded-full">LEARN MORE</button>
+        <a href="https://backoffice.yume.global/signup_process.php" class="mt-6 w-full block text-center bg-white text-orange-600 font-bold py-2 rounded-full">
+            LEARN MORE
+        </a>
       </div>
     </div>
 
@@ -293,7 +303,7 @@
 
             <!-- CTA Button -->
             <div class="mt-6 w-full flex justify-center md:justify-start">
-                <a href="#"
+                <a href="https://backoffice.yume.global/signup_process.php"
                 class="bg-white text-orange-600 font-bold text-lg md:text-xl px-6 md:px-8 py-3 md:py-4 rounded-full shadow-md border-2 border-white hover:bg-orange-100 transition w-full max-w-xs text-center">
                     CREATE AN ACCOUNT
                 </a>
